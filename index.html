@@ -1,10 +1,175 @@
-<html>
-  <head>
-    <title>YOYOYO</title>
-  </head>
-  <body bgcolor=white>
-Bla
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Marlens Thesis</title>
+	<script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+    <script type="text/javascript" src="scripts/jsPlumb-2.0.4.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
 
-  </body>
+    <script type="text/javascript">
+    	
+    	function jsPlumbie() {
+			jsPlumb.ready( function() {
+
+				var myInstanceOfJsPlumb = jsPlumb.getInstance();
+				var secondInstanceOfJsPlumb = jsPlumb.getInstance();
+				var connectorInstanceOfJsPlumb = jsPlumb.getInstance();
+
+	    		var endpointOptionsConnector = {
+	    		  anchor:[ "BottomCenter" ], 
+	    		  isSource:true, 
+	    		  isTarget:false,
+	    		  cssClass: "startpoint",
+	    		  connector : [ "Bezier", { curviness:15 }],
+	    		  connectorStyle: { lineWidth:1, strokeStyle:'red' },
+	    		  dragAllowedWhenFull:false,
+	    		};
+
+	    		var endpointOptionsTarget = {
+	    		  anchor:[ "BottomCenter" ], 
+	    		  isSource:false, 
+	    		  isTarget:true,
+	    		  cssClass: "endpoint",
+	    		  connector : [ "Bezier", { curviness:15 }],
+	    		  connectorStyle: { lineWidth:1, strokeStyle:'red' },
+	    		  dragAllowedWhenFull:false  
+	    		};
+
+	    		jsPlumb.addEndpoint("element3", endpointOptionsConnector );
+	    		jsPlumb.addEndpoint("element4", endpointOptionsTarget );
+
+	    		myInstanceOfJsPlumb.draggable("element4");
+	    		secondInstanceOfJsPlumb.draggable("element3");
+	    		jsPlumb.bind("connection", function(info) {
+	    			var onDivX = e.offsetX;
+	    			var onDivY = e.offsetY;
+	    			$('.endpoint').css({
+	    				"position" : "absolute",
+	    				top: e.pageY + 80 - onDivY,
+	    				left: e.pageX + 35 - onDivX ,
+	    				"display" : "block"
+	    			});
+	    			var onDivX = e.offsetX;
+	    			var onDivY = e.offsetY;
+	    			$('.startpoint').css({
+	    				top: e.pageY + 80 - onDivY,
+	    				left: e.pageX + 35 - onDivX ,
+	    				"display" : "block"
+	    			});
+	    			
+	    			jsPlumb.repaint();
+
+	    		});
+			});
+    	}
+
+    	function moveEndpoints() {
+    	
+    		$("#element4").on( 'mousedown', function() {
+    			$('.endpoint').css({
+    				top: 0,
+    				left: 0,
+    				"display" : "none"
+    			});
+    		}).on('mouseup', function(e) {
+    			var onDivX = e.offsetX;
+    			var onDivY = e.offsetY;
+    			$('.endpoint').css({
+    				top: e.pageY + 80 - onDivY,
+    				left: e.pageX + 35 - onDivX ,
+    				"display" : "block"
+    			});
+    			
+    			jsPlumb.repaint();
+    		});
+    	}
+
+    	function moveStartpoints() {
+    		$("#element3").on( 'mousedown', function() {
+    			$('.startpoint').css({
+    				top: 0,
+    				left: 0,
+    				"display" : "none"
+    			});
+    		}).on('mouseup', function(e) {
+    			var onDivX = e.offsetX;
+    			var onDivY = e.offsetY;
+    			$('.startpoint').css({
+    				top: e.pageY + 80 - onDivY,
+    				left: e.pageX + 35 - onDivX ,
+    				"display" : "block"
+    			});
+    			
+    			jsPlumb.repaint();
+    		});
+    	}
+
+    	$(document).ready( function() {
+    		moveEndpoints();
+    		moveStartpoints();
+    		jsPlumbie();
+    	});
+
+    	$(document).mousedown( function() {
+    		jsPlumb.repaint();
+    	});
+
+    </script>
+        <style type="text/css">
+    		* {
+    			top: 0;
+    			bottom: 0;
+    			left: 0;
+    			right: 0;
+    			margin: 0;
+    			padding: 0;
+    			user-select: none;
+    			-webkit-user-select: none;
+    		}
+
+    		#element3 {
+    			position: absolute;
+    			display: block;
+    			background-color: blue;
+    			width: 50px;
+    			height: 50px;
+    			padding: 20px;	
+    		}
+    		
+    		#element4 {
+    			position: absolute;
+    			display: block;
+    			background-color: yellow;
+    			width: 50px;
+    			height: 50px;
+    			padding: 20px;
+    			top: 50px;
+    			left: 100px;
+    		}
+    		
+    		.endpoint {
+    			position: relative;
+    		}
+
+    		.startpoint {
+    			position: relative;
+    		}
+    		
+    		.jsplumb-endpoint:active {
+    			/*position: absolute !important;    			*/
+    		}
+
+    		.jsplumb-endpoint-anchor:active {
+    			/*background-color: red;*/
+    		}
+
+        </style>
+</head>
+<body>
+	    <div id="element3" class="element3" ondrag="jsPlumb.repaint()"> element 3 </div>
+	    <div id="element4" class="element4" ondrag="jsPlumb.repaint()"> element 4 </div>
+</body>
 </html>
+
