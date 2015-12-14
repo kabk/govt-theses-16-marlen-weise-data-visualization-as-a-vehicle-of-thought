@@ -8,115 +8,6 @@
     <script type="text/javascript" src="scripts/jsPlumb-2.0.4.js"></script>
     <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
 
-    <script type="text/javascript">
-    	
-    	function jsPlumbie() {
-			jsPlumb.ready( function() {
-
-				var myInstanceOfJsPlumb = jsPlumb.getInstance();
-				var secondInstanceOfJsPlumb = jsPlumb.getInstance();
-				var connectorInstanceOfJsPlumb = jsPlumb.getInstance();
-
-	    		var endpointOptionsConnector = {
-	    		  anchor:[ "BottomCenter" ], 
-	    		  isSource:true, 
-	    		  isTarget:false,
-	    		  cssClass: "startpoint",
-	    		  connector : [ "Bezier", { curviness:15 }],
-	    		  connectorStyle: { lineWidth:1, strokeStyle:'red' },
-	    		  dragAllowedWhenFull:false,
-	    		};
-
-	    		var endpointOptionsTarget = {
-	    		  anchor:[ "BottomCenter" ], 
-	    		  isSource:false, 
-	    		  isTarget:true,
-	    		  cssClass: "endpoint",
-	    		  connector : [ "Bezier", { curviness:15 }],
-	    		  connectorStyle: { lineWidth:1, strokeStyle:'red' },
-	    		  dragAllowedWhenFull:false  
-	    		};
-
-	    		jsPlumb.addEndpoint("element3", endpointOptionsConnector );
-	    		jsPlumb.addEndpoint("element4", endpointOptionsTarget );
-
-	    		myInstanceOfJsPlumb.draggable("element4");
-	    		secondInstanceOfJsPlumb.draggable("element3");
-	    		jsPlumb.bind("connection", function(info) {
-	    			var onDivX = e.offsetX;
-	    			var onDivY = e.offsetY;
-	    			$('.endpoint').css({
-	    				"position" : "absolute",
-	    				top: e.pageY + 80 - onDivY,
-	    				left: e.pageX + 35 - onDivX ,
-	    				"display" : "block"
-	    			});
-	    			var onDivX = e.offsetX;
-	    			var onDivY = e.offsetY;
-	    			$('.startpoint').css({
-	    				top: e.pageY + 80 - onDivY,
-	    				left: e.pageX + 35 - onDivX ,
-	    				"display" : "block"
-	    			});
-	    			
-	    			jsPlumb.repaint();
-
-	    		});
-			});
-    	}
-
-    	function moveEndpoints() {
-    	
-    		$("#element4").on( 'mousedown', function() {
-    			$('.endpoint').css({
-    				top: 0,
-    				left: 0,
-    				"display" : "none"
-    			});
-    		}).on('mouseup', function(e) {
-    			var onDivX = e.offsetX;
-    			var onDivY = e.offsetY;
-    			$('.endpoint').css({
-    				top: e.pageY + 80 - onDivY,
-    				left: e.pageX + 35 - onDivX ,
-    				"display" : "block"
-    			});
-    			
-    			jsPlumb.repaint();
-    		});
-    	}
-
-    	function moveStartpoints() {
-    		$("#element3").on( 'mousedown', function() {
-    			$('.startpoint').css({
-    				top: 0,
-    				left: 0,
-    				"display" : "none"
-    			});
-    		}).on('mouseup', function(e) {
-    			var onDivX = e.offsetX;
-    			var onDivY = e.offsetY;
-    			$('.startpoint').css({
-    				top: e.pageY + 80 - onDivY,
-    				left: e.pageX + 35 - onDivX ,
-    				"display" : "block"
-    			});
-    			
-    			jsPlumb.repaint();
-    		});
-    	}
-
-    	$(document).ready( function() {
-    		moveEndpoints();
-    		moveStartpoints();
-    		jsPlumbie();
-    	});
-
-    	$(document).mousedown( function() {
-    		jsPlumb.repaint();
-    	});
-
-    </script>
         <style type="text/css">
     		* {
     			top: 0;
@@ -168,8 +59,23 @@
         </style>
 </head>
 <body>
-	    <div id="element3" class="element3" ondrag="jsPlumb.repaint()"> element 3 </div>
-	    <div id="element4" class="element4" ondrag="jsPlumb.repaint()"> element 4 </div>
+	    <div id="element3"> element 3 </div>
+	    <div id="element4"> element 4 </div>
+        <script type="text/javascript">
+
+        jsPlumb.ready(function() {
+            jsPlumb.connect({
+                source:"element3",
+                target:"element4",
+                endpoint:"Rectangle"
+            });
+            
+            jsPlumb.draggable("element3");
+            jsPlumb.draggable("element4");
+        });
+
+        </script>
+        
 </body>
 </html>
 
