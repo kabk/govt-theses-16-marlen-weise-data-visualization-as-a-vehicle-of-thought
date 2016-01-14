@@ -36,28 +36,66 @@
     			padding: 0;
     			user-select: none;
     			-webkit-user-select: none;
+                overflow: hidden;
     		}
 
-    		#element3 {
-    			position: absolute;
-    			display: block;
-    			background-color: blue;
-    			width: 50px;
-    			height: 50px;
-    			padding: 20px;	
+            body {
+                background-color: #eee;
+                
+            }
+
+            .text-main {
+                position: absolute;
+                display: block;
+                width: 200px;
+                height: 250px;
+                padding: 20px;  
+                border: 1px solid black;
+                background-color: white;
+            }
+            
+            #text-main-1 {
+                top: 20px;
+                left: 470px;
+            }
+
+    		#text-main-2 {
+                top: 20px;
+                left: 900px;
     		}
     		
-    		#element4 {
-    			position: absolute;
-    			display: block;
-    			background-color: yellow;
-    			width: 50px;
-    			height: 50px;
-    			padding: 20px;
-    			top: 50px;
-    			left: 100px;
-    		}
-    		
+            #text-main-3 {
+                top: 20px;
+                left: 20px;
+            }
+
+            .text-sub {
+                position: absolute;
+                display: block;
+                width: 10px;
+                height: 10px;
+                padding: 20px;  
+                border: 1px solid black;
+                background-color: white;
+                font-size: 4px;
+                overflow: hidden;
+            }
+
+            .sub-1 {
+                top: 500px;
+                left: 570px;
+            }
+
+            .sub-2 {
+                top: 500px;
+                left: 1000px;
+            }
+
+            .sub-3 {
+                top: 500px;
+                left: 120px;
+            }
+            
     		.endpoint {
     			position: relative;
     		}
@@ -77,19 +115,134 @@
         </style>
 </head>
 <body>
-	    <div id="element3"> element 3 </div>
-	    <div id="element4"> element 4 </div>
+        <div class="text-main" id="text-main-1"> element 1 </div>
+	    <div class="text-main" id="text-main-2"> element 2 </div>
+        <div class="text-main" id="text-main-3"> element 3 </div>
+
+        <div class="text-sub sub-1" > subelement 1.1 </div>
+        <div class="text-sub sub-1" > subelement 1.2</div>
+        <div class="text-sub sub-1" > subelement 1.3</div>
+
+
+
+        <div class="text-sub sub-2" > subelement 1.1 </div>
+        <div class="text-sub sub-2" > subelement 1.2</div>
+        <div class="text-sub sub-2" > subelement 1.3</div>
+        <div class="text-sub sub-2" > subelement 1.1 </div>
+        <div class="text-sub sub-2" > subelement 1.2</div>
+        <div class="text-sub sub-2" > subelement 1.3</div>
+
+
+
+        <div class="text-sub sub-3" > subelement 1.1 </div>
+        <div class="text-sub sub-3" > subelement 1.2</div>
+        <div class="text-sub sub-3" > subelement 1.3</div>
+        <div class="text-sub sub-3" > subelement 1.1 </div>
+        <div class="text-sub sub-3" > subelement 1.2</div>
+        <div class="text-sub sub-3" > subelement 1.3</div>
+
+
         <script type="text/javascript">
+
+        function placeSubtextRandomly() {
+            var x = 500;
+            var y = 100;
+
+            $('.text-sub').each( function() {
+                var randomnessX = Math.random() * x - x/2;
+                var randomnessY = Math.random() * y - y/2;
+                var thisLeft = $(this).position().left;
+                var thisTop = $(this).position().top;
+
+                $(this).css({
+                    "left": thisLeft + randomnessX,
+                    "top" : thisTop + randomnessY,
+                });
+
+            });
+
+        }
+
+        $( document ).ready( function() {
+            placeSubtextRandomly();
+
+        });
+
+
+
+
+
+        var style = {
+            lineWidth: 1, strokeStyle: 'black'
+        };
+
+        var end = "Blank";
+        
 
         jsPlumb.ready(function() {
             jsPlumb.connect({
-                source:"element3",
-                target:"element4",
-                endpoint:"Rectangle"
+                source:"text-main-1",
+                target:"text-main-2",
+                endpoint: end,
+                paintStyle: style,
             });
             
-            jsPlumb.draggable("element3");
-            jsPlumb.draggable("element4");
+            jsPlumb.connect({
+                source:"text-main-1",
+                target:"text-main-3",
+                paintStyle: style,
+                endpoint: end,
+            });
+
+            jsPlumb.connect({
+                source:"text-main-2",
+                target:"text-main-3",
+                endpoint: end,
+                paintStyle: style,
+            });
+
+
+            jsPlumb.draggable("text-main-1");
+            jsPlumb.draggable("text-main-2");
+            jsPlumb.draggable("text-main-3");
+
+
+            $('.text-sub.sub-1').each( function() { //  .sub-1 needs to change to number of the subcategory
+                var thisSub= $(this);
+                jsPlumb.connect({
+                    source: thisSub,
+                    target: "text-main-1", // this needs to be changed to the main text target id
+                    endpoint: end,
+                    paintStyle: style,
+                });
+                jsPlumb.draggable( thisSub );
+            });
+
+
+            $('.text-sub.sub-2').each( function() { 
+                var thisSub= $(this);
+                jsPlumb.connect({
+                    source: thisSub,
+                    target: "text-main-2", 
+                    endpoint: end,
+                    paintStyle: style,
+                });
+                jsPlumb.draggable( thisSub );
+            });
+
+
+            $('.text-sub.sub-3').each( function() { 
+                var thisSub= $(this);
+                jsPlumb.connect({
+                    source: thisSub,
+                    target: "text-main-3", 
+                    endpoint: end,
+                    paintStyle: style,
+                });
+                jsPlumb.draggable( thisSub );
+            })
+
+
         });
 
         </script>
