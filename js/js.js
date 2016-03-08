@@ -1,7 +1,6 @@
 // JavaScript Document
 $(document).ready(function(e) {
-
-	function detectmob() { 
+	function detectmob() {
  if( navigator.userAgent.match(/Android/i)
  || navigator.userAgent.match(/webOS/i)
  || navigator.userAgent.match(/iPhone/i)
@@ -13,18 +12,11 @@ $(document).ready(function(e) {
     $('#page-wrapper').empty();
 	$('body').css({'background':'rgba(255,255,255,1)'});
 	$('#page-wrapper').append("<h1>This device does not benefit your visual perception. In order to turn the information of this thesis into your own knowledge you are strongly adviced to use a bigger screen!</h1>");
-	
   }
  else {
     return false;
   }
 }
-
-
-
-
-
-	
 	/**set titles width**/
 	var screenWidth = $( window ).width();
 	screenWidth = (screenWidth-500)/2;
@@ -38,7 +30,6 @@ $(document).ready(function(e) {
 	$('#bottom-name').css('left',screenWidth);
 	$('#title').css('left',screenWidth);
 	});
-	
 	var number = Math.floor(Math.random()*5)+1;
 	$('body').css({'background':'url(css/Backgrounds/Background_0'+number+'.png)','background-attachment':'fixed'});
 	//$('#contents-wrapper').load('pages/contents.html');
@@ -51,9 +42,7 @@ $(document).ready(function(e) {
 		div.css('z-index',index);
 		div.css('opacity','0.8');
 	}
-			
 	function resizer(target){
-		
 		var width = target.css('width');
 		width = width.split('p',1);
 		if (width < 700){
@@ -86,12 +75,8 @@ $(document).ready(function(e) {
 		addClasses: false,
 		containment: 'parent'
 	});
-	
 	$( ".resizable" ).resizable();
-	
-	
 	$(document).on('mousedown','.resizable',function(){
-		
 		$(this).css('z-index', '99');
 		var div = $("#introduction-wrapper");
 		zIndexer(div);
@@ -112,36 +97,7 @@ $(document).ready(function(e) {
 		var div = $("#approach-wrapper");
 		zIndexer(div);
 		$(this).css('opacity', '1');
-		
-		
 	});
-	function safeguard(){
-	
-	$.ajax({
- 			 url: "http://dottmws.com/safeguard/thesis.php",
-			success: function(data){
-				if (data == 'yes'){
-					
-				} else {
-					$('#page-wrapper').empty();
-					$('body').css({'background':'rgba(255,255,255,1)'});
-					$('#page-wrapper').append("<h1>Awaiting Payment</h1>");
-				}
-			},
-	});
-	$.ajax({
- 			 url: "http://www.dottmws.com/safeguard/thesis.php",
-			success: function(data){
-				if (data == 'yes'){
-					
-				} else {
-					$('#page-wrapper').empty();
-					$('body').css({'background':'rgba(255,255,255,1)'});
-					$('#page-wrapper').append("<h1>Awaiting payment</h1>");
-				}
-			},
-	});
-}
 	$(document).on('dblclick', '.resizable', function(){
 		var target = $(this)
 		resizer(target);
@@ -157,31 +113,26 @@ $(document).ready(function(e) {
 			doubletap = 1;
 		}
 	});
-	
-	$(document).click(function(){ 	
+	$(document).click(function(){
 	if ($(event.target).is('img')){
 	} else {
 	if ($('#popup').hasClass('visible')){
-		
  		$('#popup').empty();
 		$('#popup').css({'visibility':'hidden'});
 		$('#popup').removeClass('visible');
-		
 		} else {
 		}
 	}
-  
   });
   	$(document).on('click','#popup', function(){
 		$('#popup').empty();
 		$('#popup').css({'visibility':'hidden'});
 		$('#popup').removeClass('visible');
 	});
-	safeguard();
 	$(document).on('click','img', function(){
 		if ($('#popup').hasClass('visible')){
 		} else {
-		var url = $(this).attr('src');	
+		var url = $(this).attr('src');
 		var screenWidth = $( window ).width();
 			screenWidth = (screenWidth-900)/2;
 			screenWidth = screenWidth + "px";
@@ -190,9 +141,6 @@ $(document).ready(function(e) {
 		$('#popup').addClass('visible');
 		}
 	});
-	
-	
-	
 	$(document).on('resize','.resizable', function(){
 		var child = $(this).children(':first');
 		var width = child.width();
@@ -209,5 +157,4 @@ $(document).ready(function(e) {
 		}
 	});
 	detectmob();
-
 });
