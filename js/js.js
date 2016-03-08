@@ -12,7 +12,7 @@ $(document).ready(function(e) {
  ){
     $('#page-wrapper').empty();
 	$('body').css({'background':'rgba(255,255,255,1)'});
-	$('#page-wrapper').append("<h1>Not Supported on a mobile device. Please open on a desktop</h1>");
+	$('#page-wrapper').append("<h1>This device does not benefit your visual perception. In order to turn the information of this thesis into your own knowledge you are strongly adviced to use a bigger screen!</h1>");
 	
   }
  else {
@@ -39,7 +39,7 @@ $(document).ready(function(e) {
 	$('#title').css('left',screenWidth);
 	});
 	
-	var number = Math.floor(Math.random()*(3-1+1)+1);
+	var number = Math.floor(Math.random()*5)+1;
 	$('body').css({'background':'url(css/Backgrounds/Background_0'+number+'.png)','background-attachment':'fixed'});
 	//$('#contents-wrapper').load('pages/contents.html');
 	function zIndexer(div){
