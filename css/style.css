@@ -63,6 +63,19 @@ html, body {
 	opacity:0.8;
 	overflow:hidden;
 }
+
+a:link, .pinkitup {
+    color:inherit;
+}
+
+a:visited, .pinkitup {
+    color:inherit;
+}
+
+a:hover, .pinkitup {
+    color:rgba(255, 153, 204, 1);
+}
+
 #title{
 	width:450px;
 	height:80px;
@@ -70,10 +83,6 @@ html, body {
 	top:0;
 	background:url(images/TitleTop_Home.png) center no-repeat;
 	left:40%;
-}
-
-a:link, .pinkitup {
-	color:rgba(255, 153, 204, 1);
 }
 
 #left-text{
@@ -101,46 +110,49 @@ a:link, .pinkitup {
 	background:url(images/TitleBottom_Home.png) center no-repeat;
 }
 #introduction-wrapper{
-	width:250px;
-	height:120px;
-	top:35%;
+	width:230px;
+	height:70px;
+	top:34%;
 	left:40%;
-	z-index:10;
+	z-index:12;
 }
 
+/********  1  *********/
 #challenges-wrapper{
-	width:350px;
-	height:180px;
-	top:22%;
-	left:39%;
+	width:300px;
+	height:210px;
+	top:21%;
+	left:42%;
 	z-index:8;
 }
 #challenges{
 }
-
+/******  2  ***********/
 #knowledge-wrapper{
 	width:300px;
 	height:200px;
-	top:47%;
+	top:48%;
 	left:35%;
-	z-index:7;
+	z-index:9;
 }
 #knowledge{
 }
+
+/********  3  *********/
 #intake-wrapper{
 	width:300px;
-	height:200px;
-	top:50%;
-	left:20%;
+	height:240px;
+	top:51%;
+	left:22%;
 	z-index:7;
 }
 #intake{
 }
 
 #conclusion-wrapper{
-	width:280px;
+	width:260px;
 	height:200px;
-	top:43%;
+	top:42%;
 	left:61%;
 	z-index:6;
 }
@@ -150,8 +162,8 @@ a:link, .pinkitup {
 #abstract-wrapper{
 	width:250px;
 	height:340px;
-	top:23%;
-	left:14%;
+	top:22%;
+	left:17%;
 	z-index:5;
 }
 
@@ -160,7 +172,7 @@ a:link, .pinkitup {
 #approach-wrapper{
 	width:300px;
 	height:280px;
-	top:29%;
+	top:28%;
 	left:59%;
 	z-index:1;
 }
@@ -169,18 +181,18 @@ a:link, .pinkitup {
 }
 
 #contents-wrapper{
-	width:200px;
+	width:230px;
 	height:280px;
-	top:20%;
-	left:29%;
+	top:15%;
+	left:25%;
 	z-index:11;
 }
 
 #footnotes-wrapper{
 	width:200px;
-	height:380px;
-	top:23%;
-	left:52%;
+	height:390px;
+	top:24%;
+	left:58%;
 	z-index:4;
 	
 }
@@ -261,6 +273,10 @@ a:link, .pinkitup {
 		word-spacing: -0.4px;
 }
 
+.blue {
+		color:rgba(0, 0, 255, 1);
+}
+
 .question {
 	font-family:superclarendon-bold;
 		font-size: 38px;
@@ -316,9 +332,10 @@ p {
 }
 
 ::-webkit-scrollbar-track{
-    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
     background: rgb(200,200,200);
     border-radius: 20px;
+
 
 }
 ::-webkit-scrollbar-thumb{
@@ -328,6 +345,7 @@ p {
     background: rgb(111,111,111);
     -webkit-box-shadow: 0 1px 1px rgb(0,0,0);
     background: -webkit-linear-gradient(rgb(200,200,200), rgb(150,150,150));
+
 }
 
 ::-webkit-scrollbar-track-piece {

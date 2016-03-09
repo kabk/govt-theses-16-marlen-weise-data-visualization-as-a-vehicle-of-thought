@@ -1,4 +1,5 @@
 // JavaScript Document
+
 $(document).ready(function(e) {
 	function detectmob() {
  if( navigator.userAgent.match(/Android/i)
@@ -30,8 +31,10 @@ $(document).ready(function(e) {
 	$('#bottom-name').css('left',screenWidth);
 	$('#title').css('left',screenWidth);
 	});
-	var number = Math.floor(Math.random()*5)+1;
+	var number = Math.floor(Math.random()*3)+1;
 	$('body').css({'background':'url(css/Backgrounds/Background_0'+number+'.png)','background-attachment':'fixed'});
+
+
 	//$('#contents-wrapper').load('pages/contents.html');
 	function zIndexer(div){
 		var index = div.zIndex();
@@ -65,6 +68,7 @@ $(document).ready(function(e) {
 			target.addClass('cursor');
 			child.removeClass('scroll');
 		}
+
 	};
 	//Make divs resizable and movable
     $('.draggable').draggable({
