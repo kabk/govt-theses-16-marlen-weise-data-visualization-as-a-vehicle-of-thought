@@ -1,10 +1,939 @@
-<html>
-  <head>
-    <title>YOYOYO</title>
-  </head>
-  <body bgcolor=white>
-B
-  
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  </body>
+    <title>CONCEPTUAL COGNITIVE DESIGN</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="How can neuroscientific research benefit designing graphical means for cognitive mapping?." />
+
+    <meta property="og:title" content="CONCEPTUAL COGNITIVE DESIGN" />
+
+    <meta property="og:image" content="http://kabk.github.io/govt-theses-16-marlen-weise-data-visualization-as-a-vehicle-of-thought/images/Website_Teaser_01.gif"/>
+   
+    <meta property="og:author" content="Marlen Weise" />
+    <meta property="dc:creator" content="Marlen Weise" />
+    <meta property="dc:created" content= "2015-12-05t00:00:00Z" />
+    <meta property="dc:modified" content= "2015-12-05t00:00:00Z" />
+
+
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link type="text/css" href="css/style.css" rel="stylesheet" />
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/js.js"></script>
+</head>
+<body>
+<div id="page-wrapper">
+	<div id="title" class="draggable2">
+    </div>
+    <div id="left-text" class="draggable2">
+    </div>
+    <div id="right-text" class="draggable2">
+    </div>
+    <div id="bottom-name" class="draggable2">
+
+
+
+        <!--INTRODUCTION-->
+
+
+    </div>
+    <div id="introduction-wrapper" class="cursor resizable draggable">
+    	<div id="introduction" class="content">
+        <p>
+    <span class="head">INTRODUCTION</span>
+</p>
+<p>
+    <br><br><br>
+    <span class="quote">“don’t be so wordy...<br>
+        ...i need google in my brain!”</span><br><br>
+    <br><br>
+</p>
+<p>
+
+    <span class="subhead">THE INFORMATION AGE VERSUS THE AGE OF KNOWLEDGE</span>
+</p>
+<p>
+Many refer to our current age as the “Information Age” or the “Knowledge Age”. Although these two descriptions are trying to imply the same, they indicate two different factors of our time. Information and knowledge, and also the term data, are closely related but they are in no way equal to each other. Interestingly most, if not all of the definitions of these terms share a common feature; they are defined with each other. In a contiguous definition this could become: data are elements of analysis, information is data with context and knowledge is information with meaning. <span class="reference">[01]</span> <br>
+In order to clarify the difference between information and knowledge in relation to our current age, it is important to see the progression within this definition. Information is provided facts which can potentially be transformed into something you “know”, which is crucial in order to call something knowledge. If we see information as a message that contains relevant meaning and knowledge as cognition or recognition (the know-what), as the capacity to act (the know-how), and as the understanding (know-why) contained within the mind, it hints to the Age of Information being the more fitting name for our time. Not that knowledge building isn’t happening nowadays but the more dominant phenomenon is the enormous existence and accessibility of information provided by technology.
+</p>
+<p>
+As we know from Angela Merkel, the internet is “Neuland” and therefore brings “new” contemporary values along. <span class="reference">[02]</span> The amount of information which can be found on the internet is close to boundless and gives us the opportunity to access any subject that might come to mind. There has never been a shortage of information and opinion in history, even not before the birth of the internet; so if there was an abundance of information before, we are now in a mega-abundance stored in a chaos-structure.
+ </p>
+<p>
+Not that this is anything new, but this state and the convenience of access allows us to use the internet as our modern library and primary source of information. It is also so convenient that we, in many cases value more how to locate information, rather than investing in processing knowledge of it. The collective memory in form of the internet, presenting its countless opportunities, tempts us to value quantity over quality and to know a little about everything (where one might also confuse a high relevance of a source with its reliability). In his book “The Shallows” which explores the effects of the Internet on the brain, Nicholas Carr asks “why would you memorize the contents of a single book when you could be using your brain to hold a quick guide to an entire library?” <span class="reference">[03]</span> At first glance this quick guide seems to have many advantages and might give one the feeling of knowing more, which always feels satisfactory, even though this contravenes with the idea that the more we know, the more likely we are to doubt our choices and to second guess ourselves, which leads to unhappiness. So maybe it is just the illusion of knowing more that makes us happy and  drives us to gather more nonspecific information rather than becoming an expert; a shallow stimulation of our felt intelligence.
+</p>
+<p>
+Being surrounded by the circumstances to potentially become an expert in every possible field creates the feeling of a need to keep up which as a social angst is termed “The Fear of Missing Out”. <span class="reference">[04]</span> But since it is not possible for everybody to become a “genius universalis” the outcome is fast skimming and scrolling in order to stay on top of the flux. 
+But most of all, it is a basic feature of human life that while information is easy, knowledge is difficult. </p>
+<p>
+These different qualities refer to the way of access getting more and more easy and processing staying with the same force of endeavor it has always had (although in the brain’s evolution the processing capability of cognitive load is also increasing <span class="reference">[05]</span>). Knowledge requires the act of information processing to storing it as memory. <br>
+We are dependent on our long-term-memory to revisit our past and recollect from it in order to refer to it, to perform most tasks. If we treat memory as a source of knowledge, the process of memorizing is the key in the explanation of knowledge being difficult. 
+</p>
+<p>
+The deeper we want to anchor information in our long-term-memory the more effort it will take. <span class="reference">[06]</span> It requires conscious thought to remember experiences (episodic memory) or to remember information (semantic memory). <span class="reference">[07]</span> When defining knowledge by the process of creating it through memory it is obvious how these processes are more “difficult” than the pure existence of information.
+</p>
+<p>
+The mega-abundance-state and these effects resulting in the web-quantity-over-quality-phenomenon create web reading behaviors which lead to new ways of knowledge aquisition. Already 1999 Jakob Nielsen describes in his book “Designing Web Usability: The Practice of Simplicity”, which was one of the first guides to web usability, how eye movements change when reading on the web. <span class="reference">[08]</span> The question of how users read on the web can basically be answered with: they don’t. By Carr this was phrased as us trading in the “intellectual tradition of solitary, and singleminded concentration” for “skimming and scrolling information in a more ‛efficient’, non-linear manner”. <span class="reference">[03]</span>
+</p>
+<p>
+Following these behaviors we fail to digest information because we cannot easily make sense of the fluid chaos-structure with all its interrelations. In order to accumulate and understand information we create a cognitive map of this informational landscape; a mental representation trying to grasp the perceived. But due to the overload and disorder this representation is maybe full of information but lacks understanding and thus meaning. But doesn’t the territory which is hardest to map need a map the most?<br>
+</p>
+
+<p>
+<br><br><br>
+    <span class="subhead">WHAT IS THE VALUE OF INDIVIDUAL KNOWLEDGE?</span><br>
+</p>
+<p>
+Some of the behaviors resulting from the mega-abundance of information are in a way devaluing individual knowledge. The more information piles up on Internet servers around the world, and the easier it is for that information to be found, the less distinctive and attractive knowledge will appear by comparison. The Internet has already greatly weakened our sense of what is distinctive about individual knowledge, and why it is worth seeking. The transportation of information to the long-term memory requires undivided attention and reflection; and most of all, time. With the information flow of the internet our working memory gets overloaded and we deprive our minds of this process, not even letting it begin. Information stays information and won’t make it to its transformation to being anchored knowledge. In this sense we can become “mindless” consumers of information.
+</p>
+<p>
+On the other hand educationists object to the unnecessary memorization of information, mostly in the form of memorizing by dull repetition, often without experience or understanding. For example Don Tapscott, a well known writer on the subject of the internet and society, argued that the internet is now “the fountain of knowledge” and that students need not memorize particular facts such as historical dates. “It is enough that they know about the Battle of Hastings,” he said, “without having to memorize that it was in 1066. They can look that up and position it in history with a click on Google.” <span class="reference">[09]</span> This would mean that we are increasingly relying on the Internet as an extension or prosthesis of our memory. <br>
+If this is the basis, the ability to focus might now be more important than how knowledgeable somebody is, since distractions are then one of the few things being able to mislead you. Knowledge was once more of an internal property of a person, but with the Internet knowledge can be supplied externally, but focus must be forced internally. <span class="reference">[10]</span> <br>
+David Dalrymple, research affiliate at MIT’s Media Lab, who also mentioned this draws the conclusion that the Internet has made acquiring “a large body of knowledge” unnecessary. This statement emphasizes on the scope of knowledge which is also an issue in the argument before. So maybe it is a practical problem of distinguishing the essential information to know by heart.<br>
+Finding out facts about a topic is very different from knowing about and understanding the topic as we clarified by the distinction of information and knowledge. Being able to revisit a well-understood fact stored in mind is far different from merely getting an unfamiliar answer supplied by Wikipedia. Understanding a topic will always require critical study which is the “difficult” factor as explained. If too difficult for one, this can lead to a negligent use of information resulting in parroting.
+In addition, Google or Wikipedia need to be asked in order to spit, so the least knowledge that needs to exist, is the one of the question. If we adapt the thought of liberal arts education, the main focus lays on developing judgment or understanding of questions which requires an idea of the various facts and by this gives the ability to think about and use those facts. <span class="reference">[11]</span> In this sense, no matter how fast you can google, wise judgment must have a deeper anchored base than laying on the pick-up platter, although snacks on that always look delicious and are easy to snatch.<br>
+Another factor that might favor the idea of using the internet as a knowledge supplier is the need to reinvent your knowledge base over and over again due to the ever-changing nature of science and technology. This not only applies to information stored on the internet and can also be rebutted by pointing out that new information doesn’t always replace the old or debilitate it. While it is often said that the “half life” of most technical information is shorter and shorter, this is not true for basic facts of science. And in order to have a mildly sophisticated understanding of how our world works we cannot rely on the internet being the storage and our brains simply being the processor. For this to happen a nanobot-like implant would be necessary, that enables a fluid transition between storages in something like cloud computing. (Even though this sounds a little crystal-skulls-like, according to recent experiments might not be that far <span class="reference">[12]</span> and is also predicted in “The Singularity Is Near: When Humans Transcend Biology” by futurist Ray Kurzweil.)<br>
+What may sound like arguing against extracting information from the internet is only meant to promote the value and possession of an amount of individual knowledge (not being specific about that precise amount), in order not to turn into the “dumbest generation” as blamed by Mark Bauerlein’s book. <span class="reference">[13]</span>
+</p>
+<p>
+<br><br>
+The Information Age characterized by its super-abundance of information stored in a chaos-structure with high accessibility challenges knowledge acquisition more then ever. Resulting behaviors lead to a lack of understanding and thereby a lack of processing information into knowledge and creating meaning. Information is all accessible as the collective’s recorded output, but this does not equal it being an individual’s possession.
+</p>
+<p>
+The notion of cultural commons enabled by the internet creates new ideas for collective knowledge in the future, but at least for now I am convinced that individual knowledge is something we should continue to admire and aspire as a value for ourselves, as well as our contribution to society by creating a foundation for innovations, inventions, reconstruction and revolution (to possibly even lead us to the opportunity of embracing collective knowledge in a wider extend).
+
+</p>
+<p><br><br>
+    <span class="quote">“Sometimes people write novels and they just be so wordy and so self-absorbed. I am not a fan of books. I would never want a book's autograph. I am a proud non-reader of books.”</span>
+</p>
+<p><br><br><br>
+    <span class="quote">“I need google in my brain and an anti-virus in my heart.”</span>
+
+                                        <span class="caption">– Kanye West <span class="reference">[14]</span></span><br><br><br><br>
+
+</p>
+<p>
+
+From the standpoint of a designer this problem calls for, and creates opportunities for visual communication. How can graphical means contribute to knowledge circulation? How do we create knowledge? 
+</p>
+<p><br><br><br>
+    <span class="question">HOW CAN NEUROSCIENTIFIC RESEARCH BENEFIT DESIGNING GRAPHICAL MEANS FOR COGNITIVE MAPING?</span><br><br><br><br><br><br>
+</p>
+<p>
+</p>
+
+<!--CHAPTER 01-->
+
+        </div>
+    </div>
+    <div id="challenges-wrapper" class="cursor resizable draggable">
+    	<div id="challenges" class="content">
+        <p>
+    <span class="number">01</span>
+</p>
+<p>
+
+    <span class="head">KNOWLEDGE TRANSMISSION </span><br><br>
+</p>
+<p>
+        <span class="subhead">GENERAL KNOWLEDGE TRANSMISSION </span>
+</p>
+<p>
+Knowledge can be mentally retained from real life experiences or through education. Some people like to forget that they are not the first generation of humans walking on earth and must experience everything first hand. This can lead to indulging in catastrophic events that could have been prevented by following advice of a former generation and their knowledge recordings. Imitating history and adopting second hand knowledge might not always be the key to success, since this can mean that an individual can know a proposition despite lacking any evidence for it and reaching belief by unreliable means. But critically examining existing bodies of knowledge  will create a richer soil on which decisions can be based. Decision making, which in a bigger sense can mean death or survival, is what motivates us to transfer our knowledge to the next generation and by that giving them the opportunity to know more than only what they have experienced first hand. It is the evolution of thought and knowledge, which transforms way faster than the human body that does not seem to transform visibly at all. So it is as basic as always, with knowledge we make sure to survive in order to have sex to eventually create a new generation. <span class="reference">[15]</span>
+</p>
+<p>
+Transmission of knowledge needs communication. Knowledge can travel with people or in the form of external representation, which then becomes its vehicle. Spoken language has always constituted one of the chief means of transmitting knowledge. <span class="reference">[16]</span> In earlier times oral poetry and song was one of the main mediums to capture information and keep them from getting lost. This memorable format exclusively stored in the mind obviously has its limitations in storing capacity and therefore can only carry clear and direct information. Imagine to chant this thesis in a rhymed version for others to remember. Although it would be a blast it wont be fast and therefore as a transmissional medium should stay in the past (add rhythm for more fun). This of course depends on the type of content and its mediating complexity; to transmit the feeling of love, chanting might be “a good way to go”.
+</p>
+<p>
+The written language developed, and as an aid to remember more gave the opportunity to recall more than what you can hold in mind and by that liberating knowledge from these boundaries. What was chanting, fun and a natural state of distractedness turned into deep concentration. Complex thought processes compressed into the form of linear writing demands deciphering text and interpreting meaning simultaneously. Linear writing is in this case defined as the connectivity of a sentence and not as a form of narrative. <span class="reference">[17]</span> The act of deep reading and long linear concentration progressively spread widely across the world after what Gutenberg did, amplifying intellectual thought processes. <span class="reference">[18]</span> Following the literacy data from UNESCO of 2011, worldwide litracy rates are around 87% of youth and adults and are rising. So it is fair to say that the written word as a knowledge vehicle reaches most of the world by now. <span class="reference">[19]</span> Our current infosphere includes modes of knowledge production making use of countless different descriptive techniques. But still our education tends to bias us towards a familiarity with reading as a way of obtaining information. Also looking at the philosophical assumptions on which epistemology is grounded on shows a logocentric and empiricist orientation. These assumptions need to be challenged in order to examine visualization as a basic mode of knowledge production, since graphical forms are a big part of the cultural legacy that we rely on for knowledge of the world and ourselves. An enormous amount of knowledge is best (or even only) communicated visually.
+</p>
+<p>
+
+</p>
+<p>
+<br><br>
+<span class="subhead">VISUAL KNOWLEDGE TRANSMISSION</span>
+</p>
+<p>
+
+William Ivins’s landmark study, “Prints and Visual Communication” already clarified the substantial role visual images and graphical descriptions have played in the history of the natural and physical sciences. Irvins shows that engravings made the production of “exactly repeatable statements” in visual form possible which were integral to the advance of modern science. <span class="reference">[20]</span> Prints of course served to mediate knowledge in every sense, since graphical descriptions are closely linked to breakthroughs in theoretical knowledge and technological developments regarding tools for representation.<br>
+But even before the existence of print technology, visual images served diverse epistemological functions from the representation of information in compact, legible form, to the expression of states of mind and experience. Maps, graphs, diagrams, illustrations, pictorial images of all kinds, even handwriting and inscriptions, provide information through graphical means (as images) but also through their specific visual features such as texture, syntax, color and other characteristics.
+</p>
+<p>
+In her book “Graphesis: Visual knowledge production and representation” Johanna Drucker defines the term “Graphesis” as the field of knowledge production embodied in visual expressions. But the range of such expressions is enormous, and defining the principles and characteristics could never be stable since they are cultural expressions of knowledge connected to interpretive sensibility.<br>
+The term graphical includes specialized writing and notation, codes and symbols and also embraces visual art and design. In this sense the term suggests visual expressions that are arrangements of marks or visual forms organized to read. Graphic artifacts present knowledge through the combination of symbolic codes and structured relations of these elements, mostly in a flat field. <span class="reference">[21]</span><br>
+With graphesis Drucker intents to create a critical framework within which the forms that are generally used for the presentation of information can be understood and read as culturally coded expressions of knowledge with their own epistemological assumptions and historical lineage.<br>
+So to refer to graphesis means to understand visual knowledge representations as organizing principles of all images (image meaning created by graphical means) for the ways they encode knowledge through visual structures and rhetorics of representation. Following our relationship to information is structured through graphical formats. 
+</p>
+<p>
+Most “information visualizations” come from fields where quantitative data are an integral feature of the discipline, such as statistics in the natural sciences, engineering, technical drawing, and applied mathematics. The work of people like Stuart Card and Edward Tufte comes directly out of that realm and does not necessarily attend to the cultural history and value of mediation of the graphical forms they use <span class="reference">[22]</span>. In Tufte’s, “The Visual Display of Quantitative Information” he stresses continually that the information exists independently of its presentation and that the designer’s task is to make it as clear as possible. <span class="reference">[23]</span> In this way he doesn't address the assumptions and mediative qualities inherent in hierarchical structures, grids, or other formats. 
+</p>
+<p>
+Works by James Elkins and Alan MacEachren synthesize a history of graphical knowledge [<span class="reference">[24]</span> <span class="reference">[25]</span>. In “How Maps Work: Representation, Visualization, and Design” Alan MacEachren discuses vision, visuality, and theories of cognition. MacEachren is a cartographer, but he reviews the history of models of vision from physiological and philosophical perspectives. This synthetic history exposes the lineage of visual forms of information. The familiar “tree” form diagram, for instance, assumes a continuous, branching relationship of the elements that mirrors concepts of organic evolution also incorporating genealogical charts with biblical antecedents. Gridded tables that make use of columns assume continuity of information types along the horizontal or vertical axes and were developed for classification and calculation. Cartographic modes structure a point of view into their presentation which could be an omniscient bird’s eye perspective, a cultural bias emphasizing the northern hemisphere or recording the history of an exploration as it occurred. Iconic symbols draw on beliefs about the power of images to be read directly by the eye as in the tradition of the “hieroglyphic” or “Chinese character” which are taken as self-evident signs. Different charts often “chunk” their data according to reductive parameters such as age groups or other rough statistical metric dimensions. This history makes a similar point as Martin Gardner does in his book “Logic Machines and Diagrams” which argues for thinking about graphical forms as machines capable of doing something, not only showing it. <span class="reference">[26]</span>
+</p>
+<p>
+Visual images can contain different types of incidental information as an aspect of culture. The representation of a “typical” woman, farmer or soldier, speaks volumes about the culture in which it was created. As a recording of state and condition such an image carries accompanying information. On another level the development of a structure of a calendar arranging the hours of the day into units was affected by historical and cultural values as well as it proceeds affecting vice versa. In both cases the “image” functions as a mediator of content and information. But from a designers point of view and with the attention on knowledge acquistion of large amounts of information the focus lies on graphical formats with organizing principles operating as mediators in a more “extensive” way than a painting might do. Here also the intention of communication is certainly relevant. But no matter, the structure and style of graphical information is a crucial part of its meaning. Following, our idea of “visual information” can shift towards an understanding of graphical forms as part of the larger cultural legacy that we rely on for knowledge of the world and ourselves.
+</p>
+<p>
+In our contemporary culture, it is no longer possible to distinguish between reality and appearance, between idea and image. Today, images and graphics can no longer be considered a reflection of a transcendental reality but as simulacra which have nothing to do with reality rather, they constitute a reality of their own. As Fredric Jameson explains how our models for the real have taken over the place of the real in postmodern society also refering to Baudrillards concept of simulacra and simulation (disregarding if the cultural-dominant in the information age is still postmodernism). <span class="reference">[27]</span> <span class="reference">[28]</span>
+The ubiquity and promiscuity of the image distinguishes our contemporary culture. Images do not only represent the world, but are inherent to it: they are not copies of things, but they are adhered to the things themselves. Images do not longer only act as a mediators between the subject and the world, but they have taken hold of both: they do not need the gaze of the subject to exist and have replaced the world by its visual counterpart. In our visual culture, it is no longer possible to differentiate between the world and its representation: they have become one. 
+</p>
+<p>
+This distinction between generative methods of visualization and presentation of data is crucial. The study of cognition has led to the development of an information-processing version of visual experience, and away from earlier mechanistic models of stimulus- response through eye to brain. In such a systems-dependent analysis, graphical forms of knowledge become part of a set of exchanges in which the ability to know as well as the content of knowledge is formed by these structures.
+</p>
+<p>
+
+</p>
+<p>
+
+<br><br>
+<span class="subhead">THE INFORMATION AGE BENEFITING GRAPHIC VISUALIZATION</span>
+</p>
+<p>
+Acknowledging the enourmous importance of visual communication in knowledge transmission and its generating possibilities, we can look at factors of our current age specifically benefiting graphical communication of knowledge.
+</p>
+<p>
+Of course images have a long history. Not ever to forget cave paintings as a starting point we can wrap up whith what Duncan Davies states in “The Telling Image: The Changing Balance between Pictures and Words in a Technological Age”:
+
+</p>
+<p><br><br>
+<span class="quote">“Thus, there were 250 centuries when we had pictures alone (...). Next there were 20 centuries when we learnt how to use formalized pictures (pictograms and ideograms) as message carriers. There followed some 15 centuries or so during which clerks made the great leap forward of alphabetic reading and writing. During the next 5 centuries, reading and writing thrust picture-communication into the background. However, over the past one-third of a century, the picture has suddenly and explosively become the main means for ‘reading’ and learning, but not yet the main means for the ordinary person’s ‘writing’.”</span><br>
+</p>
+<p>
+<span class="caption">– Davies, Duncan, Diana Bathurst, and Robin Bathurst. The Telling Image: The Changing Balance between Pictures and Words in a Technological Age. <span class="reference">[29]</span></span><br><br>
+</p>
+<p>
+
+In consideration of media development today, many scientists of very different disciplines state a “revolution of the pictures” – a relative decline of word and number communication in favor of image communication [<span class="reference">[30]</span>. This is mostly credited to todays comunnication preferences and what Richard Mark Friedhoff calls the “second” computer revolution.
+</p>
+<p><br><br>
+<span class="quote">„The ultimate impact of visual computing will eventually match or exceed the tremendous societal changes already wrought by computers. This is the reason for thinking of visualization as a ‘second’ computer revolution. Visually oriented computers, computers with a window, open up a whole new kind of communication (...)“.</span><br><br>
+
+<span class="caption">– Friedhoff, Richard Mark., and William Benzon. Visualization: The Second Computer Revolution. <span class="reference">[31]</span></span><br><br>
+</p>
+<p>
+In the book “The Telling Image” Davies examines the phenomenon of the “changing balance between pictures and words” by looking at technological developments for image communication and the connected comunicational behavior. He creates a chart compiling historical forms of communication seperated  in pictures, words and numbers related to technology and education ending in what he calls “an explosion of pictures”. (see Image 01+02) Comunication- and media philosopher Vilém Flusser calles this “explosion” a revolution in communication, the revolution of the image. [30]  Accompanying with this the use of visualized information has increased 400% in literature (since 1990) <span class="reference">[32]</span>, 9900%on the internet (since 2007) <span class="reference">[33]</span> and 142% in newspapers (between 1985 &amp; 1994) <span class="reference">[34]</span>.<br>
+This general tendency towards more visually-oriented forms of communication is supported by several driving forces whith four of those being extremely present in the information age.
+</p>
+<p>
+
+<span class="indent">1. Technical development:
+Microscopes and telescopes, photo and video, film and television, digitization and visual media have already fundamentally changed the possibilities of recording, generation and dissemination of visual information and lead to an increased use of image communications in all different media (as specified in Davies chart, <span class="blue">[</span>  Image 01 <img src="css/images/01_Historie der Kommunikation (Teil I).png" width="auto" height="25px"/> <span class="blue">]</span>  and <span class="blue">[</span>  Image 02 <img src="css/images/02_Historie der Kommunikation (Teil II).png" width="auto" height="25px"/> <span class="blue">]</span> ). Recent developments in hardware processors for graphic performance, improved display technologies, graphic-oriented programming languages and visual information systems reinforce this trend for visual communication forms sustainably.</span>
+
+</p>
+<p>
+<span class="indent">2. The internationalization of communication:<br>
+The internationalization of communication is directly related to the globalization of the economy and society. Following this expansion of communication relations across the boundaries of linguistic and cultural communities and after the failure (so far) of the shared artificial language Esperanto, the search for, and the recourse to intelligible image information is noticable. Currently the most prominent approach for the search of an universal language seems to be a search for a visual esperanto.<span class="reference">[35]</span> (Or maybe from another perspective code.) Globalized communication like this can be seen in pictograms for the Olympics, in traffic signs or as internationally standardized use of computer icons.</span>
+</p>
+<p>
+
+<span class="indent">3. The desire for “richer” communication:<br>
+The desire for richness to support human communication constitutes a fundamental characteristic in the development and the use of media. In “Escaping Flatland” Edward R. Tufte, characterizes the permanent effort of the people to capture, inherently multidimensional worlds – the three-dimensional world in which we live, or higher dimensional spaces, we think about – on to two-dimensional paper or screen surfaces. <span class="reference">[36]</span> It always concerns capturing the natural richness of real worlds or worlds of thought with “poor”, less rich media. This basic desire for richer communication is reflected in technologies development and in its steady pursuit to expand image reproduction capabilities and display bandwidths. Technological developments bring new representational opportunities, which does not neccessarily lead to higher communication quality.</span>
+</p>
+<p>
+
+<span class="indent">4. The simplicity of visual reception:
+The simplicity, ease and speed with which we can percieve pictures, is another important driver for the dissemination of visual media as an information carrier. Although the mechanisims and the development of visual perception are not fully understood yet, this is widly agreed upon.<span class="reference">[37]</span> <br>
+While language requires transmission and reception in succession, images allow “simultaneity and fast pace” in perception. <span class="reference">[38]</span> We can even “read” complex pictorial representations relatively easily.<br>
+On the other hand the creation or the “writing” of visual information seems to be way more difficult. A main barrier for the dissemination of visual information may lay just within this dificulty.</span>
+</p>
+<p>
+Also image manipulation and the ambiguity of interpretations are critical factors that can count as barriers of visual representations. In some cases there also seems to be a historic contemt against the visual as a knowledge carrier in terms of it reducing complexity and being “information fast food” that is easier to “digest”. Just as the bible out of pictures was called the “biblia pauperum”, the bible for the poor connected to a lack of education caused by power structures.
+</p>
+<p>
+While technical developments may be the most connected to the access and distribution of information in our age of overload as discusses before, the simplicity of visual reception is the point mainly connected to the bahavior resuting out of the super abundance state as explained above. (see “The Information age versus the age of knowledge”) <br>
+High information density challenges the attention quality of a message in sticking out and in being comprehensionable. This simplicity is what is mostly used in the environment of overload as a solution for higher comprehension rates. A higher comprehension rate equals a better chance for congruence of the message send and the one being recieved and understood. Following the use of visuals as in data and information visualization are a result caused by behaviors as well as an attempt to comunicate efficiently within these behaviors. But even the sheer state of overload calls for different access options whithin its jungle. Because, while the volume of data stored worldwide grows at an enormous speed, access and use of many sectors are still limited to specialists. In this sense there are high hopes for new forms of visual access to information bases and databases.
+</p>
+<p>
+<br><br>
+<span class="subhead">THE SIMPLICITY OF VISUAL RECEPTION</span>
+</p>
+<p>
+The value of visual knowledge transmission as in visual culture transporting what Zenon Pylysnyn in his essay „Seeing and Visualizing is not what you think“ calls, unconceptualized contents, which have a finer grain than one‘s linguistic vocabulary, adds up with the nature of human beings being visually wired as mentioned in the point of “simplicity of visual reception”. 50 percent of our brain is involved in visual processing with the visual cortex as the largest system in the human brain and also 70% of all our sensory receptors are in our eyes. <span class="reference">[39]</span> While reading is a skill we must learn, picture processing is an ability we are all born with up to a certain extent. There is plenty of scientific evidence stating that human beings are visual creatures ( for example the “Picture superiority effect”, the “The Paivio Dual coding theory” or the “The Nelson Semantic theory” <span class="reference">[40]</span> <span class="reference">[41]</span> <span class="reference">[42]</span>) but for this purpose it is enough to build on the believe of vision playing, not to say the most important, but a major role in information retrieval and for some purposes simplifying the process of knowledge transmission. Following, representing information visually can facilliate the retrieval, perception, elaboration and recall of information (Information that is visually perceived will be more acurately recalled <span class="reference">[43]</span>, also see “Information storage in form of mental representations; the cartography of the mind”) in multiple ways and by that positively adress the causes of information overload. <span class="reference">[44]</span> In an early study from 1987 Jill Larkin and Herbert Simon showed, for example, that diagrams and other visual formats allow people who are less experienced in a domain to process information more like an expert could. In particular, they found that visual representation facilliates the recognition of patterns, the capability to relate various pieces of information. <span class="reference">[45]</span>
+
+</p>
+
+
+<!--CHAPTER 02-->
+
+
+        </div>
+    </div>
+    <div id="knowledge-wrapper" class="resizable draggable cursor">
+    	<div id="knowledge" class="content">
+        <div>
+    <p>
+        <span class="number">02</span>
+    </p>
+    <p>
+        <span class="head">MENTAL PROCESSING FROM SENSING TO BRAIN-DATABASING</span><br>
+    </p>
+    <p><br>
+        <span class="subhead">THE USE OF KNOWLEDGE ABOUT VISUAL PERCEPTION AND COGNITION</span>
+      
+</div>         <!--was ist hier los?-->
+    </p>
+    <p>
+    Information visualization shifts the balance toward greater use of visual perception, taking advantage of our powerful eyes whenever possible. One of the earliest contributions to the science of perception was made by the Gestalt School of Psychology. The original intent of this effort when it began in 1912 was to uncover how we perceive pattern, form, and organization in what we see. The founders observed that we organize what we see in particular ways in an effort to make sense of it. <span class="reference">[46]</span> The result of the effort was a series of Gestalt principles of perception, which are still respected today as accurate descriptions of visual behavior. Partially this is a attempt to understand the laws of our ability to acquire and maintain meaningful perceptions in an apparently chaotic world and develop a systematic way of ensuring that visualization designs make optimal use of human perception and cognition. Many different issues influence the success and efectiveness of a design, and these run the gamut of the underlying human behavior. A design as a visual stimuli must be good cognitively (can the user easily understand the semantic structure of the design?) and perceptually (can they effortlessly interpret the visual information present in the design?) to be efective.<br>
+    Researchers have suggested guidelines for good visual design <span class="reference">[47]</span> which are more rules-of-thumb, based on simple displays which are useful in understanding and guiding design. However, these are mostly based on intuition and the use of a designers own visual systems to try to predict the percept.
+    But the understanding of perception more and more, not only because of the challenges of the information age, becomes a crucial asset for visual communicators and results in a form of “science of design”.
+    </p>
+    <p>
+    After looking into the challengs of the information age from the angle of knowledge transmission, memory creation and information retrieval it seem logical to examine the human perceptual processes from this same position. How do we store perceived information and how does our mind structure these for best information recall? What are the mechanisms of our brain to not forget the visually perceived?
+    </p>
+    <p>
+
+<br><br><br>
+
+                <span class="subhead">PERCEPTION AS THE START OF THE COGNITIVE PROCESS</span><br>
+    </p>
+    <p>
+    We perceive. There is nothing such as sense control which lets us shut down our channels of information intake. Even the absence of incoming data decodes as information in itself. It may be unconscious but information is pouring in through our senses on a constant level which cannot be stopped. It is the story of the distal stimulus moving in to your mind and settling down as a percept if you want to or not. It begins with an object or instance in the real world, termed the distal object. By means of light, sound or another physical process, this object stimulates the body’s sensory organs. This signal is, in a process called transduction, transformed from input energy into neural activity. These neural signals are transmitted to the brain and processed. The resulting mental re-creation of the distal stimulus is the percept. We call this story perception and it can be split into two processes. <span class="reference">[48]</span> <br>
+    Firstly processing sensory input which transforms these so called low-level information to higher-level information. Secondly processing which is connected with a person‘s concept and expectations (based on existing knowledge), and selective mechanisms (attention) that influence perception. <br>
+    Without necessarily implying understanding, perceiving and the awareness of the the process is part of our general awareness of being. To make this even more relevant, perceive this: we perceive; therefore we are! <span class="reference">[49]</span> In this discourse of the world within we are leaving aside the philosophical factor which questions the general status of perceptual data; is it objective reality or only in the mind of the perceiver. We are interested in the processing (the how) and not in quality related to reality. <span class="reference">[50]</span>
+    In order to represent and understand the environment surrounding us we identify, organize and interpret sensory information. <span class="reference">[51]</span> This endless activity of information intake depends on complex functions of the nervous system and luckily subjectively seems mostly effortless because this processing happens outside conscious awareness.<span class="reference">[52]</span> But not to make the process of perception seem too nonchalant, when going in the direction of mediated perception it can become rather effortfull.<br>
+    Based on James Gibson‘s perception theory we can differentiate between two procedure of information intake; the perception of things and the mediated perception of things.<span class="reference">[53]</span><br>
+    The hypothesis is that direct or first-hand perception is that which comes from environmental sources (1a) and that indirect or second-hand knowledge is that which comes from mediators. Mediated or indirect perception is of three common types (2a) that which depends on the understanding of images and pictures, (2b) that which depends on the understanding of speech, and (2c) that which depends on the understanding of writing. All these can be described as perception or knowledge at second hand. <span class="reference">[54]</span>
+    </p>
+    <p><br>
+    
+                <span class="indent">(1a)
+    Hey, i see letters, therefore they are.
+    </p>
+    <p>
+    <span class="indent">(2a)
+    I see, and i know what it is.</span>
+    </p>
+    <p>
+    <span class="indent">(2b)
+    Psst, i hear and i know what they say.</span>
+    </p>
+    <p>
+    <span class="indent">(2c)
+    I read words with a meaning, which tell a story.</span><br><br>
+    </p>
+    <p>
+    The mediators (2a-c) are sources of stimulation, a media of communication among persons.
+    </p>
+    <p>
+    This distinction between direct and mediated perception can only be found in perceptual theories that can be labeled indirect. They begin with the assumption that the senses are provided with an impoverished but rich description of the world. In such theories it is a necessary consequence of the view that input is inadequate, that stimulus information must be processed. Being processed is the sense-making of “raw” information, which in indirect perception theories refers to mediated perception (self-mediation). In this sense first-hand information can be mediated within the processing or information can be perceived through a carrier which by its existence mediates (medium).<br>
+    Most of perceptual theories are based on assumptions, but anyhow the distinction between information being raw or mediated gives the opportunity to limit the discussed form of perception here.
+    </p>
+    <p>
+    In order to research organizing structures as a medium, mediated perception, as perception of information using a carrier/medium will be the reference point for the upcoming argumentation. However it is not meant to exclude direct perception or cross-over-perceptions as a source of knowledge and it is not a argument for indirect perceptual theories and their idea of information processing.
+    </p>
+    <p><br><br><br>
+
+    <span class="subhead">INFORMATION RECALL AND MENTAL REPRESENTATIONS; <br>THE CARTOGRAPHY OF THE MIND</span><br>
+    </p>
+    <p>
+
+    Most things experienced, learned and memorized in the past will have its moment of retrieval. There are three main types of recalling stored information: 1. Free recall, 2. Cued recall and 3. Serial recall.
+    </p>
+    <p>
+    <span class="indent">1. Memorize this list of items and recall them in any order. <span class="reference">[55]</span><br>
+    
+    Guitar<br>
+    License plate<br>
+    Lightbulb<br>
+    Towel<br>
+    Candle<br>
+    Mug<br></span><br>
+ 
+    <span class="indent">2. Recall the list by cues to remember the material. <span class="reference">[56]</span><br>
+
+    Instrument<br>
+    Car<br>
+    Lamp<br>
+    Fabric<br>
+    Lighter<br>
+    Coffee<br></span><br>
+
+    <span class="indent">3. Recall the items in the order in which they occurred. <span class="reference">[57]</span><br>
+
+    2<br>
+    4<br>
+    6<br>
+    8<br></span><br>
+    </p>
+    <p>
+    (To store a sequence in memory, the sequence is repeated over time until it is represented in memory as a whole, rather than as a series of items.)
+    </p>
+    <p>
+    It is easy to experience here how cued recall simplifies and shortens the process compared to free recall, while serial recall depends on prior learning. [56] <br>
+    Clustering information can be used as remembering aid following the principle of cued recall. Also “context-dependency”  which means finding similarities between the process of recognition and that of recall can improve retrieval making use of cued recall. <span class="reference">[58]</span>
+    </p>
+    <p>
+
+
+    Even though happening in our minds, our minds have no certainty about how memory recall through storage-structures works and how the structures are neuroscientificly generated (sneaky secret keeping within), but substantial progress has been made in the last five years. These recent discoveries provide three major points in relation to the implementation of cognitive knowledge to design. One, regarding the following to be the first scientific prove of memory actually being connected to space (1), two, the prooven information recall via mental time travel(2) and three, these discoveries also being valid for abstract space (3). 
+    </p>
+    <p><br><br><br>
+    The question is how the structuring, the cartography of the mind works and more who the cartographer in action is, if it is not our conscious awareness? From 1971 until 2014 the general believe was that the so called place cells were the responsible ones.
+    </p>
+    <p>
+    A place cell is a type of neuron within the hippocampus that becomes active when an animal enters a particular place in its environment; this place is known as the place field. Given a sufficient number, place cells and their fields are able to cover or “map” any given environment. But 2014 the Moser-couple revolutionized that idea by the discovery of grid cells for which they won the Nobel Prize in Physiology or Medicine (together with John O’Keefe who earlier discovered the place cells). Grid cells are another type of neutrons in the brains of many species that allows them to understand their position in space. [59] In contrast to place cells, they do not represent particular locations in the environment. Instead, they “tile” the environment, and are re-used over and over, like the intersections on graph paper (hence the name “grid cells”). Grid cells can have different constant spacings, and it is believed that in the formation of the grid, they form a universal, flexible net of code for mapping otherwise undifferentiated navigable space.<br>
+    Edvard and May-Britt Moser believe that both of these cells types work together in forming a complex navigation system of information in our mind. Place cells fire whenever the human is in a certain location (can be abstract space or real); I am here, at this specific point! Grind cells on the other hand give a positioning feedback independent from external clues and by that form a hexagonal pattern grid much like GPS, which is used as an internal positioning system; Hello place cells, this is the grid system, place yourself! <span class="reference">[60]</span> (See <span class="blue">[</span>  Image 03–07
+    <img src="css/images/03_.jpg" width="auto" height="25px"/>  <img src="css/images/04_.jpg" width="auto" height="25px"/>  <img src="css/images/05_.png" width="auto" height="25px"/>  <img src="css/images/06_.png" width="auto" height="25px"/>  <img src="css/images/07_.png" width="auto" height="25px"/> <span class="blue">]</span> )
+    </p>
+    <p>
+    Scientists don’t know yet in detail how the mind constructs its spatial maps or how they are used for navigation, but they are certain that they exist. The work of John O’Keefe and the Mosers might ultimately illuminate much more than the brain’s navigational system. O’Keefe already believed in his discoveries leading to a wider impact on human behavior studies and started to develop the cognitive map theory equal to Edward Chace Tolmans findings, explained before. The Mosers also argue that a better understanding of the brain’s mapping technique may lead to new insights in other areas of neuroscience.
+    </p>
+    <p>
+    For instance the research also includes the fact that place cells are found in a part of the brain called the hippocampus, which has long been considered the brain’s memory hub. The connection between spatial structures and memory has for long been a hypothesis, but has now become more recent and researched than ever due to this first scientific prove (1). Following the Nobel Prize of 2014, Matthew Wilson, professor in neurobiology at MIT said that “there is something fundamental about how we connect memory and space”. 
+    It is an emergent theme that place-coding cells in the hippocampal structures are involved in storing and/or retrieving spatial memories. Already in the 1950s a report on a client was published who had his two hippocampi surgically removed for treatment of epilepsy. The loss of hippocampi caused severe memory deficits, as evident by the clinical observation that the patient was unable to encode new memories. <span class="reference">[61]</span> This was the first scientific prove of the connection between memory development and the hippocampus and by that to spatial memory. <br>
+    Together the activity of place cells may be used both to define the position in the environment at any given time, and also to remember past experiences of the environment. So rather than simply forming our inner GPS, place cells and grid cells may even provide a system for anchoring our memories based on space.
+    </p>
+    <p>
+    Many researchers already believe in a link between memory and space before proven discoveries just based on prove of experiences. In a popular trick for remembering speeches, the “Method Of Loci”, dating back to ancient Greece, the orator calls to mind a familiar path through a city and attaches a segment of the information to each location along the path. According to a legend passed on by Cicero, the discovery occurred after the death of many diners at a banquet in Thessaly. After the roof of the banqueting hall collapsed, crushing and mangling the corpses beyond recognition, Simonides, who had stepped outside was able to identify the bodies by recalling his visual memory image of the people sitting around the table. <span class="reference">[62]</span> This tragic event had its good in inspiring the memory enhancement techniques, which use visualization to organize and recall information. This mnemonic may unwittingly exploit the fact that the hippocampus encodes both location information and autobiographical memories.
+    </p>
+    <p>
+    The method also uses the fact of context-dependencies (see above) in use of space regarding its recall technique. This form of information recall has also been proven by the Moser couple which enjoys to spend a large amount of time with rats. In the same experiment in which they first discovered the existence of grid cells they also made two other intriguing discoveries, one being the recall mechanism of the rats. (2)
+    </p>
+    <p><br><br>
+    <span class="indent">Experiment (designer/easy version):
+    <br>
+    The Mosers probed individual neurons inside rats’ entorhinal cortex, an area of the brain that connects to the hippocampus. They then let the animals run around an empty space and in a maze. Occasionally, the target neuron would fire. By mapping the points on the floor where this happened, the researchers discovered that the points where the neurons fired mapped out a grid of equilateral triangles. ( <span class="blue">[</span> Image 07  <img src="css/images/07_.png" width="auto" height="25px"/> <span class="blue">]</span> )  </span><br><br><br>
+
+    </p>
+    <p>
+
+    When the rats would go to sleep after running in the maze they have a way of mental time travel with which they replay sequences of spatial information. This was discovered by recording their brain activity during the sleep time which turned out to have the same fireing sequences as when they ran through the maze. It is believed that this recall happens to to transfer the memory to long-term storage. It is believed that the rat is only able to recall bits of information because of their relation to space.<span class="reference">[60]</span>
+    </p>
+    <p>
+    The new discoveries of mental mapping are based on actual space and the navigation in it, but through the connection of the hippocampus many are convinced that the mechanisms also apply for abstract space. This is also supported by discovery two: grid cells can function in complete darkness, absent any visual cues. The experiment was also carried out in darkness and had the exact same results in the neurons firring and by that building a grid. This must reflect some internal brain dynamics that are in some sense independent of external sensory input. The discovery strongly supports the idea of spatial mapping of information within the brain even if there is no direct spatial environment connected to these information. (3)
+    </p>
+    <p>
+    Through these discoveries we have a more detailed understanding of how our brain structures and recalls information. These new insights back up prior knowledge and coincide with theories about mental structures. 
+    </p>
+    <p>
+    Human and animal brains are structured in a modular way, with different areas processing different kinds of sensory information. Some of these modules take the form of sensory maps, mapping some aspect of the world across part of the brain‘s surface. These different modules are interconnected and influence each other. For instance, taste is strongly influenced by smell. <span class="reference">[63]</span>
+    Sensory maps are areas of the brain which respond to sensory stimulation, and are spatially organized according to some feature of the sensory stimulation. In some cases the sensory map is simply a topographic representation of a sensory surface such as the skin, cochlea, or retina. But in other cases these maps also represents other stimulus properties resulting from neuronal computation which are generally ordered in a manner that reflects the periphery.<br>
+    Mapping out perceived information in such a structure is a form of mental representation which is the mental imagery of things that we sensed by our sense organs. In contemporary philosophy and in fields of metaphysics such as philosophy of mind and ontology, a mental representation is one of the prevailing ways of explaining and describing the nature of our ideas and concepts. These mental representations are not restricted to experiences but can also originate from things that do not exist; maps arising from all mind‘s random fabrications. One way of maps contributing to getting lost (in your thoughts) while mapping.
+    </p>
+    <p>
+    A mental model is a internal symbol or representation of external reality in “small-scale models”.<span class="reference">[64]</span> Just as cartographers need to generalize and symbolize in order to prioritize, small-scale mental models display a selective and incomplete view of reality. <span class="reference">[65]</span> Although the sentence by Alfred Korzybski “the map is not the territory” might not apply since philosophers of indirect realism argue that the mental representation in itself is more real than objective reality. <span class="reference">[66]</span> From a pure scientific standpoint and for the sake of this thesis the map-territory relation of mental maps stays as it does with geographic cartography; the abstraction to the thing itself.
+
+    </p>
+    <p>
+    Mental representations and organization with a framework as explained appear with different naming following different theories. Terms such as “mental map”, “cognitive map”, “mental model” and “cognitive collages” originate from different research but all cover a common ground, the idea that information is given a space when anchored in or memory and in our brain. Information that is spatially stored, linked to actual or abstract locations in a mental map is called spatial memory. Spatial memories are said to form after a person has already gathered and processed sensory information about her or his environment. <span class="reference">[67]</span> The idea of the cognitive map theory was first introduced by psychologist Edward Chace Tolman, in 1948, speculating with models as foundations for behavior. What he introduced in his paper “Cognitive Maps in Rats and Men”, has found extensive application in almost every field of psychology and is frequently used among scientists who seem to be unaware of its origin (since Tolman is rarely mentioned; he is honored here. Thanks Edward.). <span class="reference">[68]</span> This was the starting point of the exploration of spatial memory and its storage structure, in order to recall information.
+    </p>
+    <p>
+    In neuroscience as well as in behavior psychology the cognitive map theory was mostly explored with the aim of understanding the generating process of the map and by that the ways of information recall.
+    It is believed that humans, when experiencing a space first construct a general layout of it. The spatial set of the general layout contains a person’s location within their environment as they move through it. Inputs from senses like vision, proprioception, smell, and hearing are all used for path integration, the creation of a vector that represents one’s position and direction within one’s environment. ( See  <span class="blue">[</span>   Image 08 <img src="css/images/08_.png" width="auto" height="25px"/>  <span class="blue">]</span> )  This resulting vectors (the directional cues) are interpreted to provide more information about the environment and one’s location within the context of the cognitive map, creating a general overview. <span class="reference">[69]</span> It is assumed that the brain places positional landmarks in addition to the directional cues. Positional landmarks provide information about the environment by comparing the relative position of specific objects. Target locations or objects can be cued as and act as landmarks as soon as they carry  some sort of recognition value to the individual. Just as a landmark to orientate in Paris could be the Eiffel Tower or a familiar playground from one's childhood. One specific object or location can be the landmark for one information cluster that has been grouped through mechanisms of the individual. By this landmarks can be the entry point into a smaller map within the big layout.<br>
+    The cognitive map is thus obtained by the integration of these two separately generated maps. <span class="reference">[69]</span> 
+    Intrestingly this model of mapping matches perfectly with the discovery of grid- and place-cells constructing to maps  <span class="blue">[</span>   Image 06 <img src="css/images/06_.png" width="auto" height="25px"/>  <span class="blue">]</span> .
+    </p>
+    <p>
+    To recall information stored in this structure people remember the general layout of a particular space first and find landmarks within that spatial set. <span class="reference">[70]</span> The recollection follows a top-down procedure that starts by remembering the overview. <span class="reference">[71]</span> Like zooming in on a cartographic map, now more and more detailed information is recalled connected to landmarks which give the opportunity to navigate. In this sense “zooming in” will not show a higher resolution but more detailed surroundings of the zoomed in landmark; related clustering and more specific connections to other landmarks. Landmarks give people guidance by activating "learned associations between the global context and target locations.“<span class="reference">[72]</span> This recollection process can easily be imagined as the mental time travel that was described for the rat's information recollection.
+    </p>
+    <p>
+    In these cognitive mapping theories we can find, what we called “context-dependency” earlier as it constructs the surrounding environment with relation and connections to other information clusters while recognition and forms the same structure when recalling. Also clustering following cued recall implies here.<br>
+    Following we can say that memory anchored in the structure of a cognitive map can be more easily recalled than memory chunks that are unaffiliated (free recall) because it can be recollected following a structure which can be more easily entered and navigated in. <span class="reference">[73]</span>
+    </p>
+    <p><br><br>
+
+
+
+    <span class="subhead">REASONING AS AN APPLICATION OF MENTAL MODELS</span>
+    </p>
+    <p>
+    The information stored in our mind can come to us in the form of thoughts, where it is important to distinguish between a sequence of unrelated thoughts from reasoning, in which case one thought directly leads to another. The active process of one thought providing support for the following one is called inference. In a similar way to how we express thoughts, we first make sense of them to ourselves by the means of statements. A statement is a claim that is capable of being true or false and it builds the basic unit of arguments. A set of statements, called the premises supports another set, the last set being the conclusion. With the inclusion of explanations this would be the most flawless and rational way to come to a conclusion. Since being human not only comes with the ability of going through this process but also with the fact of being exposed to crazy things such as emotions, logical thinking can become wide spread and even turn into not so logical thinking. Reasoning could then be defined following David Hume who said it is “the instinct in our souls”.<br>
+    No matter if the elements in our sense-making-equation came to live in a rational or irrational way, either factors can be implemented within a logical structure. <br>
+    The process is what enables us to go beyond a pure given information. The perceiver not only detects information but he elaborates on it. This is also where mediation in the form of self-mediation happens. In the case of mediated perception in the sense of an information carrier, pre-reasoning has been made by the sender, but this can still be a starting point for our own reasoning process.
+    </p>
+    <p>
+    We are consciously making sense of things and apply our own logic by combining and relating information to change or justify our beliefs or just to make every-day-life decisions. <span class="reference">[74]</span> No matter if we consider ourselves to be intellectual or not, we are eternally busy with reasoning, since it is one of the characteristics of human nature. This shapes our  behavior and sets an approach to solving problems; its the development of personal algorithms and doing tasks based on critical thinking applied on our stored information. It gives the ability to self-consciously change beliefs, attitudes, traditions, and institutions, and therefore gives the capacity for freedom and self-determination. Following, reasoning and the structures that guide to it are majorly important in the most general way.
+    </p>
+    <p>
+    Even though this process might seem so very personal, since it’s basically the way we think and that is part of how we define ourselves, there is many theories that try to make general sense of human reasoning. In most of the theories decision-making is based on rules of logic. A rather classical one connected to logic would be the “Law Of Thought” which simply works with the values of right and wrong when processing information. Plain models as this one are often questioned and recently replaced by ideas such as Intuitionistic logic and Fuzzy Logic, which take the concept of partial truth into account, where the truth value may range between completely true and completely false.
+    </p>
+    <p>
+    Generally these theories are taken as laws that guide and underlie everyone‘s thinking, thoughts, expressions, discussions and so on. Philip Johnson-Laird and Ruth M.J. Byrne first developed the theory of mental models and also made the first assumption that reasoning depends, not so much only on logical form, but on mental models, as explained above. <span class="reference">[75]</span> Since these models try to grasp a thought process about how something works in the real world and are a representation of the surrounding world and the relationships between its various parts this assumption is not that far fetched.  A mental map includes connections which relate instances to each other and by this also give possibilities for logical sense-making. Mental models don’t exclude the use of rules of logic but give a bigger structure in which other factors; irrational factors can more easily be included. A model like this can work as a web, giving the structure which incorporates different information chunks gained through different processes.
+    </p>
+    <p>
+    Not arguing for either reasoning based only on logic or on mental models or for us humans being rational or not, the basic framework of them all seems to be representational mental constructions which include a link to spatialization. From many different sources we perceive and take in information that is stored in our brain-database in form of a metal structure, which builds up our memory and sequentially knowledge, which again can be used for reasoning. In this way the construction of a cognitive map as the understanding of information equals creating memory and knowledge. <span class="reference">[76]</span> This is also what Jürgen Habermas does by making the concept of meaning a fundamental element in the process of knowledge construction and he considers it to be a turning point that opens up the way to the re-elaboration of data obtained from the rereview of experiences and the systemisation of data within a precise theoretical framework. <span class="reference">[77]</span>
+    </p>
+    <p>
+
+
+
+
+
+
+
+
+        <!--CHAPTER 3-->
+
+        </div>
+    </div>
+    <div id="intake-wrapper" class="resizable draggable cursor">
+    	<div id="intake" class="content">
+        <div>
+    <p>
+        <span class="number">03</span><br><br>
+  
+        <span class="head">A COGNITIVE CONCEPTUAL APPROACH TO DESIGN <br>WITH EDUCATIONAL PURPOSE</span><br><br>
+    </p>
+    <span class="subhead">REASONING AS CONSCIOUSNESS FOR SOCIETAL AND CULTURAL DEVELOPMENT</span>
+    <p>
+        Reasoning and sense making is a backbone of understanding and being conscious about our environment. In evolution, the most advanced state of existence is the human consciousness. It is expressed in its highest forms in being developed in terms of the relationship to others, their surroundings and their ability to interact harmoniously with all else in their sphere of life, the surrounding environment. Consciousness empowers us to collaborate actively with the evolutionary process and use the creative power of our mind to guide our systems and our society toward the fulfillment of their potential. As Jonas Salk wrote in "Anatomy of Reality: Merging of Intuition and Reason“, evolutionary consciousness can motivate action toward giving direction to our future by consciously guiding evolution, provided we have a clear vision and image of what we wish to bring about. <span class="reference">[78]</span> Having a clear vision of a desired future also requires a clear vision and understanding of current reality and relations, which is the sense-making of information and thereby linked to cognitive mapping. Conscious evolution, says Erich Jantsch, provides a sense of direction for cultural and social development by illuminating it with guiding images. And the faster we go – as we do at our current evolutionary stage in the information age – the further we have to look for images to guide our movement. 
+    </p>
+   
+</div>
+<br clear="all"/>
+<div>
+    <br><br><br>
+    <p>
+    <span class="subhead">THE SIGNIFICANCE OF DESIGN FOR SOCIETAL DEVELOPMENT</span>
+    </p>
+    <p>
+        In the context of specific societal systems, the need to engage in the creative process of envisioning, imaging and designing, emerges from the idea of the relation of image and reality as described earlier (see “Visual Knowledge Transmission”). We can see the information design process, the process of communication as a reconstruction of our cognitive map. The realization that the cognitive map we are now using has ceased to represent or mirror the now existing state of the society can be the genesis for such a process. If channeled in a positive direction and guided by creating consciousness this process has enormous significance.<br>
+        Design as visual communication is the construction of semantic structures that allow experiences and realities as information to be interpreted which is sense-making. The construction of semantic structures then equals the reality being mediated by meaning which also connects to mediated perception as explained before ( see “Perception as the start of the cognitive process”). The construction of knowledge is based on the transmission and exchange of information and thereby on the process of communication making the connection between action and the construction of knowledge. The communication processes that guide sense-making and shape knowledge are of central importance as they go along with educational processes. Educational processes can be supported by the reconstruction of individual cognitive maps giving meaning to information and with this giving information design an educational approach. <span class="reference">[79]</span> <span class="reference">[80]</span> <span class="reference">[81]</span><br>
+        The beliefs, values, aspirations and competences of society's members are reflected in education and also shape an educational experience. Thus, this “co-evolutionary relationship” of education and the society follows the same idea as the image society relationship explained earlier.
+    </p>
+</div>
+<br clear="all"/>
+<div>
+
+    <p>
+        So, consciousness is creating an image – a cognitive map – of the self and the world around the self.Through this process, individuals, groups, organizations and societies make representations o their perceptions of the world and their understanding of their place in the world (see “Information recall and mental representations”). They map “what is” in their individual and collective mind. These maps are alive because they are created, confirmed, disconfirmed, elaborated changed and redrawn constantly.  <br>
+        Constructing an image – a cognitive map – of a desired understanding guides individuals and societal development, it creates consciousness; it is a model of a future idea. Design can construct and draw normative maps, based on the ideas and expectations and the designers' vision of what an understanding or consciousness should be. This equal the generative power of images explained earlier and gives design and the designer significance for societal development.
+    </p>
+    <p><br><br><br>
+        <span class="quote">„Intentions are fairly easy to perceive, but frequently do not come about. Design is hard to perceive. It is design and not intention that creates the future.“ </span> <br>   
+</span>
+            <span class="caption">Kenneth Boulding <span class="reference">[82]</span><br><br><br>
+    </p>
+    <p>
+        Creating consciousness by constructing a cognitive map is taking external structures into our internal  brain structure with is the basic idea described by Bruce Wexler in his book “Brain and Culture: Neurobiology, Ideology, and Social Change” which relates the theory to neurobiological processes and the understanding of neuroplasticity. <span class="reference">[83]</span> Neuroplasticity is an umbrella term that describes how structure and functions of the brain are shaped by stimulation from the environment after birth. <span class="reference">[84]</span> Neuro-functional-systems as thinking, remembering or feeling arise from the integrated actions of networks of hundred thousands of neutrons. These connections that create the networks are not genetically determined but result largely from environmental stimulation which makes the construction of a cognitive map through design even more than shaping consciousness, it shapes our brain.
+
+    </p>
+    
+</div>
+<br clear="all"/>
+<div>
+
+    <p><br><br>
+<span class="subhead">A COGNITIVE CONCEPTUAL APPROACH AS A “LEITMOTIF” FOR DESIGN</span>
+    </p>
+    <p>
+        When accrediting the power to shape our brain to design we look at design solutions from a cognitive perspective. Cognitive science research on graphic representations gives a basis for, what we will call here a “cognitive conceptual approach” to design for problem solving. Knowledge has to be encoded in order to be transmitted and reconstructing the cognitive structures is an attempt to use compatible encoding schemes for sender and receiver.<br>
+        So in the creation of guiding images of consciousness a cognitive approach is adopted for the acquisition and application of competence, needed to design these images. It is the idea that through this intersection between cognitive sciences and organizational studies for graphic representations, information visualization can more easily be transformed into societal development. 
+
+    </p>
+    
+    
+</div>
+<br clear="all"/>
+<div>
+    <p>
+        To clarify we can show this approach in a contrastive manner to a more data driven approach of information visualization. Lets utilize an easy example from cartography for its relation of space and reality.
+    </p>
+    <p>
+        Data driven cartographic map design starts with collecting data on spatial environments either by surveying or by deriving information from secondary sources such as aerial photographs. Consequently, spatially “accurate” representations constitute the starting point for deriving less accurate depictions. <br>
+        By using cartographic generalization, which is the thematic and graphic simplification of cartographic representations different abstractions of spatial information are created in a simplified manner. According to the purpose of the map (and sometimes because of the greater amount of information that has to fit less map space), some aspects are emphasized while others are de-emphasized; this is part of the conceptualization process of the cartographer or designer.
+        A graphic designer starts with the richest source of information and reduces and focuses this information further and further according to his or her conceptualization concept. This approach leads to a systematic reduction in accuracy, in possible inferences, and in the number of depicted entities. On the other hand, we gain design freedom, for example, to apply design concepts, to focus on specific aspects, and most of the time to increase readability. In this case the design concepts may or may not reflect principles of mental knowledge representation.
+
+    </p>
+    
+</div>
+<br clear="all"/>
+<div>
+
+    <p>
+        In contrast the conceptual cognitive approach starts with conceptual spatial representations which are in this case accessible to us by analyzing natural language expressions, sketch maps, or by applying various other psychological methods. <br>
+        In linguistic expressions for example, in contrast to pictorial representations, the semantic content of a term such as “turn right” only captures the general concept of change of direction according to one’s egocentric frame of reference. The application of this concept to a specific spatial configuration of course then leaves room for interpretation. Approaching schematic representations this way leads to allowing various different graphical representations. Verbalization and also graphicalization are two forms of externalizing conceptual spatial representations at a first level of preciseness (that could lead to a sketch map, <span class="blue">[</span> see Image 09  <img src="css/images/09_.png" width="auto" height="25px"/>  <span class="blue">]</span> ). 
+    </p>
+    
+</div>
+<br clear="all"/>
+<p>
+        Even though schematic maps seem really close to a cognitive approach, they differ from sketch maps in being derived from topographic maps. The difference of the two approaches is clear but it is open to say how exactly a cognitive conceptual map could look like.<br><br><br>
+
+</p>
+
+
+
+
+
+        <!--CONCLUSION-->
+
+
+
+        </div>
+    </div>
+    <div id="conclusion-wrapper" class="resizable draggable cursor">
+        <div id="conclusion" class="content">
+        <p>
+    <span class="head">CONCLUSION</span><br><br>
+</p>
+<p>
+    Neuroscientific research gives us insight on the brain’s cognitive mapping. Using a conceptual cognitive approach means to understand mechanisms of the brain, to be able to implement those in designing graphical means in order to use compatible encoding schemes for sender and receiver. This approach will more likely be efficient in reconstructing ones cognitive map than other approaches. 
+    In this way neuroscientific knowledge can benefit the design of graphical formats as an application of internal mechanisms to reconstruct or generate one’s cognitive map.
+</p>
+<p>
+    Through the research of cognitive mapping theories and recent discoveries we were able to identify mechanisms used in the brain. <br><br>
+</p>
+<p>
+    <span class="indent">Due to place cells being found in the hippocampus it is scientifically proven that spatial memory storage equals memory creation. This spatial mapping inside the brain proves the main idea of cognitive mapping theories where information is given a space when anchored in our memory and in our brain.
+    Memory recall can function via mental time travel in which a sequences of spatial information is replayed and thus anchored deeper into long-term memory: a cognitive map is revisited and navigated in using landmarks and directional cues.
+    Within this structure cued recall as in context-dependency improves information retrieval.
+    These mechanisms are valid for abstract space, so independent of external sensory input and thereby apply for mental constructs and the architecture of ideas developed in our minds. All these findings have a strong relation to the use of space.
+</p>
+<p>
+    It is important to mention here that “cognitive map” is a very broad label including diverse procedures of different aspects of countless cognitive processes. The named ones are a selection connected to memory creation for reasoning to give a starting point to a graphical implementation. Following, resulting graphical formats will never be a pure and complete representation of a “way of thinking” but at the most a guide and aid.</span><br><br>
+</p>
+<p>
+    To implement this in the design of graphical means calls for further examination of different factors.
+    Is the implementation only supposed to mediate content or also meant to become a tool? Within this, is emphasis placed on individual cognitive maps or on the opportunity to activate sense-making strategies that produce shared cognitive maps?
+    ... but the most striking question coming to mind is: For what purpose are we, as designers going to use this capacity for learning and creating meaning?
+</p>
+<p>
+    Since we identified the (re)construction of ones cognitive map as the understanding of information which equals the creation of memory and knowledge, we can relate this to the problem of individual knowledge creation described in the beginning. The challenges of knowledge acquisition in the Information Age can be addressed by using a conceptual cognitive approach including the identified mechanisms to possibly ease the cognitive load and aid people to process more knowledge of given information. This might be one approach to prevent ending up as the “dumbest” generation.
+</p>
+
+
+
+        <!---ABSTRACT-->
+
+
+        </div>
+    </div>
+    <div id="abstract-wrapper" class="resizable draggable greyed cursor">
+    	<div id="abstract" class="content">
+            <p>
+                <span class="head">ABSTRACT</span><br><br>
+            </p>
+            <p>
+                         <p>
+            With the starting point of the challenges of knowledge acquisition in our current age this thesis introduces an approach for information design based on neuroscientific research. <br><br>
+            Nowadays the value of individual knowledge is questioned due to the mega-abundance of information and to its accessibility. With the believe of an still existing value of an amount of individual knowledge we are looking at visual knowledge transmission to aid knowledge creation. <br><br>
+            In a cross disciplinary way of design thinking neuroscientific research can provide an insight on internal mechanisms of knowledge creation and on the basis of perception and the cognitive process. Knowledge has to be encoded in order to be transmitted and reconstructing the cognitive structures is an attempt to use compatible encoding schemes for sender and receiver. 
+            <br><br>
+            Using a conceptual cognitive approach to design empowers the designer exceeding sources of intuition and experience. By this the designer is credited a bigger value for (re)creating consciousness for social and cultural development which questions a general design ideology when coming from a educational angle.
+            This research identifies some of the mechanisms used in the brain contributing to knowledge creation proven by neuroscientific research that can be relevant to design thinking and create a gateway for knowledge acquisition in the information age.
+            </p>
+            </p>
+
+                                <!---TABEL OF CONTENTS-->
+
+        </div>
+    </div>
+    <div id="contents-wrapper" class="resizable draggable greyed cursor">
+    	<div id="contents" class="content">
+            <p>
+            <span class="head">TABLE OF CONTENTS</span><br><br>
+             </p><br>
+        
+        <span class="head">INTRODUCTION </span><br><span class="head">“Don’t be so wordy...i need google in my brain!”</span><br><br>
+
+            <span class="subhead">THE INFORMATION AGE VERSUS THE AGE OF KNOWLEDGE <br>AND THE VALUE OF INDIVIDUAL KNOWLEDGE</span><br><br><br><br><br>
+
+
+        <span class="number">01</span><br>
+        <span class="head">VISUAL KNOWLEDGE TRANSMISSION</span><br><br>
+
+            <span class="subhead">GENERAL KNOWLEDGE TRANSMISSION <br>
+            VISUAL KNOWLEDGE TRANSMISSION<br>
+            THE INFORMATION AGE BENEFITING GRAPHIC VISUALIZATION<br>
+            THE SIMPLICITY OF VISUAL PERCEPTION</span><br><br><br>
+
+
+        <span class="number">02</span><br>
+        <span class="head">MENTAL PROCESSING FROM SENSING TO BRAIN-DATABASING</span><br><br>
+
+            <span class="subhead">THE USE OF KNOWLEDGE ABOUT VISUAL PERCEPTION AND COGNITION<br>
+            PERCEPTION AS THE START OF THE COGNITIVE PROCESS<br>
+            INFORMATION RECALL AND MENTAL REPRESENTATIONS; 
+            THE CARTOGRAPHY OF THE MIND
+            REASONING AS AN APPLICATION OF MENTAL MODELS</span><br><br><br>
+
+
+        <span class="number">03</span><br>
+        <span class="head">A CONCEPTUAL COGNITIVE APPROACH FOR DESIGN <br>WITH EDUCATIONAL PURPOSE</span><br><br>
+
+            <span class="subhead">REASONING AS CONSCIOUSNESS FOR SOCIAL AND CULTURAL DEVELOPMENT<br>
+            DESIGN IDEOLOGY, AN EDUCATIONAL APPROACH<br>
+            A COGNITIVE CONCEPTUAL APPROACH</span><br><br><br><br><br>
+
+
+        <span class="head">CONCLUSION</span><br><br>
+            
+        <span class="head">FOOTNOTES</span><br><br><br><br>
+
+
+                                <!---FOOTNOTES-->
+
+
+        </div>
+    </div>
+    <div id="footnotes-wrapper" class="resizable draggable greyed cursor">
+    	<div id="footnotes" class="content">
+        <div>
+    <p>
+        <span class="head">FOOTNOTES</span>
+    </p>
+    <p> <span class="footnotes">
+        <span class='pinkitup'>[01]</span> Davenport, Thomas H. and Prusak, Laurence, 2000, <u>Working Knowledge: How Organizations Manage What They Know</u>, Harvard BusinessSchool Press.
+<br><br>
+        <span class='pinkitup'>[02]</span> Morris, Harvey, <u>Chancellor Merkel Discovers the Internet</u>
+        <a href="http://rendezvous.blogs.nytimes.com/2013/06/20/chancellor-merkel-discovers-the-internet/?_r=0, June 20, 2013.">
+            , http://rendezvous.blogs.nytimes.com/2013/06/20/chancellor-merkel-discovers-
+        the-internet/?_r=0, June 20, 2013. </a>
+<br><br>
+        <span class='pinkitup'>[03]</span> Carr, Nicholas G., 2010, <u>The Shallows: What the Internet Is Doing to Our Brains</u>. New York: W.W. Norton.
+<br><br>
+        <span class='pinkitup'>[04]</span> Herman, Dan, <u>The Fear of Missing Out</u>, http://fomofearofmissingout.com/fomo, retrieved January 22, 2016. 
+<br><br>
+        <span class='pinkitup'>[05]</span> Hofman, Michel A., 2014, <em>“Evolution of the Human Brain: When Bigger Is Better.”</em> Frontiers in Neuroanatomy 8.
+<br><br>
+        <span class='pinkitup'>[06]</span>  Atkinson, Richard C., and Richard Martin Shiffrin, 1968, <u>Some Speculations on Storage and Retrieval Processes in Long-term Memory</u>, Stanford, Calif.: Institute for Mathematical Studies in the Social Sciences, Stanford U.
+<br><br>
+        <span class='pinkitup'>[07]</span> Miller, George A., 1956. (The magical number seven, plus or minus two: some limits on our capacity for processing information)(PDF), <em>Psychological Review 63</em>,  p.81–97.
+<br><br>
+        <span class='pinkitup'>[08]</span> Nielsen, Jakob, 2000, <u>Designing Web Usability:</u>, Indianapolis, IN: New Riders.
+<br><br>
+<span class='pinkitup'>[09]</span> Tapscott, (Google Generation Has No Need for Rote Learning), <em>Times</em>, December 2, 2008.
+<br><br>
+        <span class='pinkitup'>[10]</span> Dylan, Jesse, <u>From Jack Kerouac to the pentatonic scale</u><a href="http://edge.org/q2010/q10_16.html">,  http://edge.org/q2010/q10_16.html </a> , consulted on January 5, 2016. 
+<br><br>
+        <span class='pinkitup'>[11]</span> Newman, John Henry, 1873, <u>The Idea of a University Defined and Illustrated</u>, London: Pickering.
+<br><br>
+        <span class='pinkitup'>[12]</span> No author, <u>Scientists have successfully used self destructing nanobots on living mice</u><a href="hhttp://www.ign.com/articles/2015/01/23/scientists-have-successfully-used-self-destructing-nanobots-on-living-mice">, http://www.ign.com/articles/2015/01/23/scientists-have-successfully-used-self-destructing-nanobots-on-living-mice</a>, consulted on January 10, 2016.
+<br><br>
+         <span class='pinkitup'>[13]</span> Bauerlein, Mark, 2008, <u>The Dumbest Generation: How the Digital Age Stupefies Young Americans and Jeopardizes Our Future (or, Don‘t Trust Anyone under 30)</u>, New York, NY.
+<br><br>
+        <span class='pinkitup'>[14]</span> Ramsdale, Suzannah, <u>'I Am God's Vessel': Kanye West's Most WTF Quotes</u>, <a href="http://www.marieclaire.co.uk/blogs/suzannah-ramsdale/545140/the-best-kanye-west-quotes.html">http://www.marieclaire.co.uk/blogs/suzannah-ramsdale/545140/the-best-kanye-west-quotes.html</a>, 19 February 2016.
+
+<br><br>
+        <span class='pinkitup'>[15]</span> No Author, <u>The Bad Touch Lyrics</u>, http://www.metrolyrics.com/the-bad-touch-lyrics-bloodhound-gang.html, retrieved 02 December 2015.
+<br><br>
+        <span class='pinkitup'>[16]</span> Renn, Jürgen, 2012, <u>The Globalization of Knowledge in History</u>, Berlin: Ed. Open Access.
+<br><br>
+        <span class='pinkitup'>[17]</span> Crystal, David, 2011, <u>A Dictionary of Linguistics and Phonetics</u>, Malden, Mass.: 
+        Blackwell.
+<br><br>
+        <span class='pinkitup'>[18]</span>Every thesis related to design written before 1990.
+<br><br>
+        <span class='pinkitup'>[19]</span> 30.08.2013, <u>International Literacy Data 2013</u>, UNESCO Institute for Statistics, <a href="http://www.uis.unesco.org/literacy/Pages/data-release-map-2013.aspx">   http://www.uis.unesco.org/literacy/Pages/data-release-map-2013.aspx.</a>
+<br><br>
+        <span class='pinkitup'>[20]</span> Ivins, William M, 1953, <u>Prints and Visual Communication</u>, Cambridge, MA: M.I.T..
+<br><br>
+        <span class='pinkitup'>[21]</span> Drucker,Johanna, 2014 , <u>Graphesis: Visual knowledge production and representation</u>, Harvard UP.
+<br><br>
+        <span class='pinkitup'>[22]</span> Card, Stuart, 1999, <u>Readings in information visualization : using vision to think.</u>
+<br><br>
+        <span class='pinkitup'>[23]</span> Tufte, Edward R, 1984, <u>The Visual Display of Quantitative Information</u>, Cheshire (Conn.): Graphics.
+<br><br>
+        <span class='pinkitup'>[24]</span> Elkins, James,1999, <u>The Domain of Images.</u>, Ithaca: Cornell UP.
+<br><br>
+        <span class='pinkitup'>[25]</span> MacEachren, Alan M, 1995, <u>How Maps Work: Representation, Visualization, and Design.</u> New York: Guilford.
+<br><br>
+        <span class='pinkitup'>[26]</span> Gardner, Martin, 1958, <u>Logic Machines and Diagrams</u>. New York: McGraw-Hill.
+<br><br>
+        <span class='pinkitup'>[27]</span> Baudrillard, Jean, 2010, <u>Simulacra and Simulation</u>. Ann Arbor, MI: U.
+<br><br>
+        <span class='pinkitup'>[28]</span> Jameson, Fredric, 2012,  <em>"Postmodernism, Or, The Cultural Logic of Late Capitalism."</em>
+<br><br>
+        <span class='pinkitup'>[29]</span>  Davies, Duncan, Diana Bathurst, and Robin Bathurst, 1990, <u>The Telling Image: The Changing Balance between Pictures and Words in a Technological Age.</u> Oxford: Clarendon.
+<br><br>
+        <span class='pinkitup'>[30]</span> Vilém, Flusser, <u>Der Flusser-Reader Zu Kommunikation, Medien Und Design: Die Revolution Der Bilder</u>, Mannheim: Bollmann.
+<br><br>
+        <span class='pinkitup'>[31]</span> Friedhoff, Richard Mark., and William Benzon, 1989, <u>Visualization: The Second Computer Revolution.</u> New York: Abrams.
+<br><br>
+        <span class='pinkitup'>[32]</span> “Infographic,Data visualization,Information Graphics” in <u>Google Ngram Viewer</u>, 1940-2008, retrieved January 2016.
+<br><br>
+        <span class='pinkitup'>[33]</span> “Infographic” in <u>Google Trends</u>, retrieved January 2016.
+<br><br>
+        <span class='pinkitup'>[34]</span> Zacks, J., Levy, E., Tversky, B., Schinao, D., 2002, <u>Graphs in Print, Diagrammatic Representation and Reasoning</u>, London: Springer-Verlag.
+<br><br>
+        <span class='pinkitup'>[35]</span> Christian Doelker, <u>Ein Bild Ist Mehr Als Ein Bild: Visuelle Kompetenz in Der Multimedia-Gesellschaft</u>, Stuttgart: Klett-Cotta.
+<br><br>
+        <span class='pinkitup'>[36]</span> Edward Tufte, 2002, <u>Escaping Flatland</u>, Los Angeles.
+<br><br>       
+        <span class='pinkitup'>[37]</span>  Fischer, Robert E., and Warren J. Smith, 1995, <u>Current Developments in Optical Design and Engineering.</u>
+<br><br>
+        <span class='pinkitup'>[38]</span> Andreas Schelske, 1997, <u>Die Kulturelle Bedeutung Von Bildern: Soziologische Und Semiotische Überlegungen Zur Visuellen Kommunikation.</u>
+
+<br><br>
+        <span class='pinkitup'>[39]</span> Merieb, Hoehn, K., 2007, <u>Human Anatomy and Physiology 7th Edition.</u>
+<br><br>
+        <span class='pinkitup'>[40]</span> Shepard, R.N., 1967, <em>“Recognition memory for words, sentences, and pictures.” </em><u>Journal of Learning and Verbal Behavior.</u>
+<br><br>
+        <span class='pinkitup'>[41]</span> Paivio, A ,1986, <u>Mental representations: a dual coding approach.</u> Oxford. England: Oxford University Press.
+<br><br>
+        <span class='pinkitup'>[42]</span> McBride, D. M., Dosher, B.A., 2002,  <em>“A comparison of conscious and automatic memory processes for picture and word stimuli: a process dissociation analysis”</em>, <u>Consciousness and Cognition.</u>
+
+<br><br>
+        <span class='pinkitup'>[43]</span> Lester, P. M., 2006, <u>Syntactic Theory of Visual Communication.</u>
+<br><br>
+        <span class='pinkitup'>[44]</span> Strother, Judith B., Jan M. Ulijn, and Zohra Fazal, <u>Information Overload an International Challenge for Professional Engineers and Technical Communicators</u>, Hoboken: Wiley.
+<br><br>
+        <span class='pinkitup'>[45]</span> Larkin, Jill H., and Herbert A. Simon, 1987,  <em>"Why a Diagram Is (Sometimes) Worth Ten Thousand Words,"</em> <u>Cognitive Science 11.1.</u>
+<br><br>
+        <span class='pinkitup'>[46]</span> Ash, Mitchell G., 1995, <u>Gestalt Psychology in German Culture</u>, 1890-1967: Holism and the Quest for Objectivity. Cambridge: Cambridge UP.
+<br><br>     
+        <span class='pinkitup'>[47]</span> Ware, Colin, 2004, <u>Information Visualization: Perception for Design</u>, San Francisco, CA: Morgan Kaufman.
+<br><br>
+        <span class='pinkitup'>[48]</span> Bernstein, Douglas A., 2010. <u>Essentials of Psychology. Cengage Learning</u>, Belmont, CA.
+<br><br>
+        <span class='pinkitup'>[49]</span> Bruce Bower, <u>Consciousness in the Raw (Science News)</u>,  <a href="https://www.sciencenews.org/node/21411">  https://www.sciencenews.org/node/21411, September 11, 2007.</a>
+<br><br>
+        <span class='pinkitup'>[50]</span> Gregory, Richard, 1987, <u>The Oxford Companion to the Mind</u>, Oxford, Oxford UP.
+<br><br>
+        <span class='pinkitup'>[51]</span> Frohardt, Russell J., and Daniel L. Schacter, 2011, <u>Study Guide to Accompany Psychology</u>, Second Edition, New York, NY.
+<br><br>
+        <span class='pinkitup'>[52]</span> Goldstein, E. Bruce, 2010, <u>Encyclopedia of Perception</u>, Thousand Oaks, CA.
+<br><br>
+        <span class='pinkitup'>[53]</span> Gibson, Eleanor Jack, and Anne D. Pick, 2000,  <u>An Ecological Approach to Perceptual Learning and Development</u>, Oxford: Oxford UP.
+<br><br>
+        <span class='pinkitup'>[54]</span> Gibson, James J., and Patricia Yonas, <u>The Development of Graphic Activity in the Child-a Theory and a FirstExperiment</u>.
+
+<br><br>
+        <span class='pinkitup'>[55]</span> Bower, Gordon H., 2000, <u>A Brief History of Memory Research</u>, The Oxford Handbook of Memory.
+<br><br>
+        <span class='pinkitup'>[56]</span> Rock, Irvin; Walter Helmer, 1959, (Further Evidence of One Trial Associative Learning), <em>The American Journal of Psychology</em>.
+<br><br>
+        <span class='pinkitup'>[57]</span> Henson, R.,1996, <u>Short-term memory for serial order. Dissertation for PhD of Philosoph</u>, St. John’s College, University of Cambridge.
+<br><br>
+        <span class='pinkitup'>[58]</span> Watkins, M.; Gardiner, J. M., 1979, (An appreciation of the generate-recognize theory of recall), <em>Journal of Verbal Learning and Verbal Behavior 18</em>.
+<br><br>
+        <span class='pinkitup'>[59]</span> Hafting, T.; Fyhn, M.; Molden, S.; Moser, M. -B.; Moser, 2005, <u>„Microstructure of a spatial map in the entorhinal cortex“</u>.
+<br><br>
+        <span class='pinkitup'>[60]</span> Singer, Emily,  <u>Brain’s Positioning System Linked to Memory</u>, <a href="https://www.quantamagazine.org/20141007-brains-positioning-system-linked-to-memory/"> https://www.quantamagazine.org/20141007-brains-positioning-system-linked-to-memory/ </a>, October 7, 2014.      
+<br><br>
+        <span class='pinkitup'>[61]</span> Benedict Carey, 2008, <u>„H. M., an Unforgettable Amnesiac, Dies at 82“</u>, New York Times.
+<br><br>
+        <span class='pinkitup'>[62]</span> Cicero, Marcus Tullius., H. Rackham, E. W. Sutton, 1988, <u>De Oratore</u>, Cambridge, Harvard UP
+<br><br>
+        <span class='pinkitup'>[63]</span> DeVere, Ronald, and Marjorie Calvert, 2010, <u>Navigating Smell and Taste Disorders</u>, New York, NY, Springer Publishing.
+<br><br>
+        <span class='pinkitup'>[64]</span>  No author, <u>What are mental models? (Mental Models and Reasoning Lab)</u>, <a href="http://mentalmodels.princeton.edu/about/what-are-mental-models/" > http://mentalmodels.princeton.edu/about/what-are-mental-models/ </a>, consulted on December 12, 2015.
+<br><br>
+        <span class='pinkitup'>[65]</span>  Monmonier, Mark S., 1991, <u>How to Lie with Maps. 2nd ed.</u>, Chicago: U of Chicago.
+<br><br>
+        <span class='pinkitup'>[66]</span>  Margolis, Eric; Laurence, Stephen, 2007, <u>„The Ontology of Concepts—Abstract Objects or Mental Representations?“</u>, (PDF).
+<br><br>
+        <span class='pinkitup'>[67]</span> Johnson, E.; Adamo-Villani, N., 2010 (A Study of the Effects of Immersion on Short-term Spatial Memory), <em>Engineering and Technology 71</em>, p.582–587.
+<br><br>
+        <span class='pinkitup'>[68]</span> Tolman E.C. (July 1948). "Cognitive maps in rats and men". <em>Psychological Review 55</em>.
+<br><br>
+        <span class='pinkitup'>[69]</span>  Jacobs, L. F.; F. Schenk, 2003 (Unpacking the cognitive map: The parallel map theory of hippocampal function), <em>Psychological Review 110.</em>
+<br><br>
+        <span class='pinkitup'>[70]</span>  Chun, M.; Jiang, Y., (Contextual Cueing: implicit learning and memory of visual context guides spatial attention). <em>Cognitive Psychology 36, 1998,</em> p.28–71. 
+<br><br>
+        <span class='pinkitup'>[71]</span>  McNamara, T.; Hardy, J.; Hirtle, S., (Subjective hierarchies in spatial memory), <em>Journal of Experimental Psychology 15,</em> 1989, p. 211–227.
+<br><br>
+        <span class='pinkitup'>[72]</span> Chun, M.; Jiang, Y., 1998, (Contextual Cueing: implicit learning and memory of visual context guides spatial attention), <em>Cognitive Psychology 36.</em>
+<br><br>
+        <span class='pinkitup'>[73]</span> Poirier, Marie; Jean Saint-Aubin, 1995, (Memory for Related and Unrelated Words: Further Evidence on the Influence of Semantic Factors in Immediate Serial Recall), <em> The Quarterly Journal of Experimental Psychology 48.</em>
+<br><br>
+        <span class='pinkitup'>[74]</span>  Kompridis, Nikolas, (So We Need Something Else for Reason to Mean), <em>International Journal of Philosophical Studies</em>, December 8, 2010.
+<br><br>
+        <span class='pinkitup'>[75]</span>  Johnson-Laird, P.N. and Byrne, 2002, <u>Conditionals: a theory of meaning, inference, and pragmatics.</u>
+<br><br>
+        <span class='pinkitup'>[76]</span>  Habermas, J. (1981). <u>Theorie des Kommunikativen Handelns.</u> Frankfurt: Suhrkamp Verlag.
+ <br><br>
+        <span class='pinkitup'>[77]</span>  Corchia, Luca, 2008, "Explicative models of complexity. <u>The reconstructions of social evolution for Jürgen Habermas".</u>   
+<br><br>
+        <span class='pinkitup'>[78]</span>  Salk, Jonas, 1983,  <u>Anatomy of Reality: Merging of Intuition and Reason</u>. New York: Columbia UP.
+ <br><br>
+        <span class='pinkitup'>[79]</span>  Nesbit, J. C. Adesope, O. O., 2006, <u>Learning With Concept andKnowledge Maps: A
+        Meta-Analysis</u>. Review of Educational Research.       
+<br><br>
+        <span class='pinkitup'>[80]</span>  Schaal, S., 2010, <em>Cognitive and motivational effects of digital concept maps in pre-service science teacher training</em>. <u>Procedia Social and Behavioral Sciences</u>.
+<br><br>
+        <span class='pinkitup'>[81]</span>  Stewart, M., 2012, <em>Joined up thinking? Evaluating the use of concept-mapping to develop complex system learning</em>. <u>Assessment and Evaluation in Higher Education</u>.
+<br><br>
+        <span class='pinkitup'>[82]</span>  Boulding, K., 1985, <u>Human Betterment</u>. Beverly Hills, CA: Sage Publications.
+<br><br>
+        <span class='pinkitup'>[83]</span>  Wexler, Bruce E., 2006, <u>Brain and Culture: Neurobiology</u>, Ideology, and Social Change. Cambridge, MA: MIT.
+<br><br>
+        <span class='pinkitup'>[84]</span>  Doidge, Norman, 2007, <u>The Brain That Changes Itself: Stories of Personal Triumph from the frontiers of brain science</u>, New York: Viking.
+
+
+    </p></span>
+</div>
+<br clear="all"/>
+
+
+
+<br><br><br><br>
+<p>
+    <span class="subhead">ADDITIONAL SOURCES:</span>
+</p>
+<p>
+    <span class="footnotes">
+
+    Bateson, Gregory, 1972, <u>Steps to an Ecology of Mind; Collected Essays in Anthropology, Psychiatry, Evolution, and Epistemology</u>, San Francisco: Chandler Pub.
+<br><br>
+    Bertin, Jacques, 1983, <u>Semiology of Graphics</u>, Madison, Wis.: U of Wisconsin.
+<br><br>
+    Boever, Arne De, Warren Neidich, and Franco Berardi, 2013, <u>The Psychopathologies of Cognitive Capitalism, (Part One)</u>.
+<br><br>
+    Clapman, M., <u>History of Technology vol. 3 from the Renaissance to the Industrial Revolution</u>.
+<br><br>
+    Friedman, Vitaly, (Data Visualization and Infographics), <em>Graphics, Monday Inspiration</em>, January 14th, 2008.
+<br><br>
+    Goldfarb, Brian, 2002, <u>Visual Pedagogy: Media Cultures in and beyond the Classroom</u>, Durham: Duke UP.
+<br><br>
+    Habermas, J., Luhmann, N. (1971). <u>Theorie der gessellshaft oder sozialtechnologie</u>, Frankfurt: Suhrkamp Verlag.
+<br><br>
+    Habermas, J. (1981). <u>Theorie des Kommunikativen Handelns</u>, Frankfurt: Suhrkamp Verlag.
+<br><br>
+    Hawkins, David, 1964, <u>The Language of Nature; an Essay in the Philosophy of Science</u>. San Francisco: W.H. Freeman.
+<br><br>
+    Henderson, Kathryn, 1998, <u>On Line and On Paper, Visual Representations, Visual Culture, and Computer Graphics in Design Engineering</u>.
+<br><br>
+    Hofstadter, Douglas R., and D. C. Dennett, 1981, <u>The Mind's I: Fantasies and Reflections on Self and Soul</u>. New York: Basic.
+<br><br>
+    Huttenlocher, Friedrich, 1968, <u>Baden-Württemberg. 3.</u>, Karlsruhe: Braun.
+<br><br>
+    Kennedy, Stephen James, 2012, <u>Transforming Big Data into Knowledge: Experimental Techniques in Dynamic Visualization</u>.
+<br><br>
+    Laird, P. N., 1977, <u>Thinking: Readings in Cognitive Science</u>, Cambridge: Cambridge UP.
+<br><br>
+    Laszlo, Ervin, 1993, <u>The Evolution of Cognitive Maps: New Paradigms for the Twenty-first Century</u>, Psychology Press.
+<br><br>
+    Lynch, Kevin, 1960, <u>The Image of the City</u>. Cambridge, MA: MIT. (Preface)
+<br><br>
+    McLuhan, Marshall, 2001, <u>The Medium is the Massage</u>.
+<br><br>
+    Monmonier, Mark S., <u>How to Lie with Maps (Second Edition)</u>.  
+<br><br>
+    O‘Keefe, J. Nadel, <u>The Hippocampus as a cognitive map</u>.
+<br><br>
+    Post, Frits H.,Gregory M. Nielson and Georges-Pierre Bonneau (2002). <u>Data Visualization: The State of the Art</u>.
+<br><br>
+    Pylyshyn, Zenon, (Seeing and Visualizing is not what you think, An Essay On Vision and Visual Imagination), <em>Rutgers Center for Cognitive Science</em>.
+<br><br>
+    Talmy, N., 2002, <u>The Evolution of Language out of Pre-language</u>, Amsterdam: J. Benjamins Pub.
+<br><br>
+    Tufte, Edward, 1983, <u>The Visual Display of Quantitative Information</u>. Cheshire, Connecticut: Graphics Press.
+<br><br>
+    Wexler, Bruce E., 2010 (Neuroplasticity: Biological Evolution’s Contribution to Cultural Evolution.) <em>On Thinking Culture and Neural Frames of Cognition and Communication</em>.
+<br><br>
+    Wexler, Bruce E., 2008, <u>Brain and Culture Neurobiology, Ideology, and Social Change</u>. Cambridge, Mass.: MIT.
+<br><br>
+    Wilson, Robert A., <u>The MIT Encyclopedia of the Cognitive Sciences</u>. Cambridge, Mass.: MIT, 1999. Print.
+<br><br>
+    Wroblewsk, Luke, <u>Communicating with Visual Hierarchy</u>.
+<br><br><br><br>
+
+</p>
+        </div>
+    	
+    </div>
+    <div id="popup">
+    </div>
+</div>
+
+</body>
 </html>
